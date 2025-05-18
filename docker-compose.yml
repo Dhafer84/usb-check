@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  usb-check:
+    image: usb-check:local
+    container_name: usb_check_test
+    privileged: true
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb
+      - /sys:/sys
+    stdin_open: true      # équivalent de -it
+    tty: true             # pour affichage interactif dans terminal
