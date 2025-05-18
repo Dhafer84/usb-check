@@ -53,6 +53,21 @@ pipeline {
                 '''
             }
         }
+
+        stage('Surveillance USB en direct') {
+            steps {
+                sh '''
+                    echo "🕵️ Surveillance en direct pendant 1 minute :"
+                    POD=$(KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true get pods -l job-name=usb-check -o jsonpath='{.items[0].metadata.name}')
+
+                    for i in $(seq 1 30); do
+                        echo "⏱️ $(date +%H:%M:%S)"
+                        KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true logs $POD --tail=10 || true
+                        sleep 2
+                    done
+                '''
+            }
+        }
     }
 }
 
