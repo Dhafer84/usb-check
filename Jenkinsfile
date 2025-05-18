@@ -34,10 +34,10 @@ pipeline {
             steps {
                 sh '''
                     echo "🗑️ Suppression ancienne Job"
-                    KUBECONFIG=$KUBECONFIG_PATH kubectl delete job usb-check --ignore-not-found=true
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true delete job usb-check --ignore-not-found=true
 
                     echo "🚀 Déploiement nouveau Job"
-                    KUBECONFIG=$KUBECONFIG_PATH kubectl apply -f usb-check-job.yaml
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true apply -f usb-check-job.yaml
                 '''
             }
         }
@@ -47,9 +47,9 @@ pipeline {
                 sh '''
                     echo "⏳ Attente 10s pour que le pod démarre..."
                     sleep 10
-                    POD=$(KUBECONFIG=$KUBECONFIG_PATH kubectl get pods -l job-name=usb-check -o jsonpath='{.items[0].metadata.name}')
+                    POD=$(KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true get pods -l job-name=usb-check -o jsonpath='{.items[0].metadata.name}')
                     echo "🔍 Affichage des logs du pod : $POD"
-                    KUBECONFIG=$KUBECONFIG_PATH kubectl logs $POD || true
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl --insecure-skip-tls-verify=true logs $POD || true
                 '''
             }
         }
