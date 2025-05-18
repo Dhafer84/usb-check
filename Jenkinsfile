@@ -33,8 +33,9 @@ pipeline {
         stage('Deploy on K3s') {
             steps {
                 sh '''
-                    kubectl --kubeconfig=$KUBECONFIG_PATH delete job usb-check --ignore-not-found
-                    kubectl --kubeconfig=$KUBECONFIG_PATH apply -f usb-check-job.yaml
+                    kubectl --insecure-skip-tls-verify=true --kubeconfig=$KUBECONFIG_PATH delete job usb-check --ignore-not-found=true
+                    kubectl --insecure-skip-tls-verify=true --kubeconfig=$KUBECONFIG_PATH apply -f usb-check-job.yaml
+
                 '''
             }
         }
