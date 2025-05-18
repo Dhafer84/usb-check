@@ -2,11 +2,15 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: usb-check
+  namespace: default
 spec:
   template:
+    metadata:
+      labels:
+        app: usb-check
     spec:
       nodeSelector:
-        kubernetes.io/hostname: vm3-2f48f538  # ou vm4-448b6698 selon où tu veux tester
+        kubernetes.io/hostname: vm3-2f48f538
       containers:
       - name: usb-check
         image: uncledhafer/usb-check:latest
@@ -22,8 +26,10 @@ spec:
       - name: usb-bus
         hostPath:
           path: /dev/bus/usb
+          type: Directory
       - name: sysfs
         hostPath:
           path: /sys
+          type: Directory
   backoffLimit: 0
 
