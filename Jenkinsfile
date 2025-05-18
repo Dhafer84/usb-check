@@ -33,25 +33,26 @@ pipeline {
         stage('Deploy on K3s') {
             steps {
                 sh '''
-                    kubectl --insecure-skip-tls-verify=true --kubeconfig=$KUBECONFIG_PATH delete job usb-check --ignore-not-found=true
-                    kubectl --insecure-skip-tls-verify=true --kubeconfig=$KUBECONFIG_PATH apply -f usb-check-job.yaml
+                    echo "🗑️ Suppression ancienne Job"
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl delete job usb-check --ignore-not-found=true
 
+                    echo "🚀 Déploiement nouveau Job"
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl apply -f usb-check-job.yaml
                 '''
             }
         }
 
         stage('Logs Check') {
             steps {
-                script {
-                    sh '''
-                        echo "⏳ Attente 10s pour que le pod démarre..."
-                        sleep 10
-                        POD=$(kubectl --kubeconfig=$KUBECONFIG_PATH get pods -l job-name=usb-check -o jsonpath='{.items[0].metadata.name}')
-                        echo "🔍 Affichage des logs du pod : $POD"
-                        kubectl --kubeconfig=$KUBECONFIG_PATH logs $POD || true
-                    '''
-                }
+                sh '''
+                    echo "⏳ Attente 10s pour que le pod démarre..."
+                    sleep 10
+                    POD=$(KUBECONFIG=$KUBECONFIG_PATH kubectl get pods -l job-name=usb-check -o jsonpath='{.items[0].metadata.name}')
+                    echo "🔍 Affichage des logs du pod : $POD"
+                    KUBECONFIG=$KUBECONFIG_PATH kubectl logs $POD || true
+                '''
             }
         }
     }
 }
+
