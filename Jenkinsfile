@@ -8,6 +8,13 @@ pipeline {
     }
 
     stages {
+        stage('Init') {
+            steps {
+                script {
+                    currentBuild.displayName = "#${BUILD_NUMBER} - USB Check"
+                }
+            }
+        }    
         stage('Checkout') {
             steps {
                 git branch: 'main',
