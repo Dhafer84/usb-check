@@ -1,37 +1,35 @@
 apiVersion: batch/v1
-kind: CronJob
+kind: Job
 metadata:
   name: usb-check
   namespace: default
 spec:
-  schedule: "*/5 * * * *"  # Toutes les 5 minutes
-  jobTemplate:
+  template:
+    metadata:
+      labels:
+        app: usb-check
     spec:
-      template:
-        metadata:
-          labels:
-            app: usb-check
-        spec:
-          nodeSelector:
-            kubernetes.io/hostname: vm3-2f48f538
-          containers:
-          - name: usb-check
-            image: uncledhafer/usb-check:latest
-            volumeMounts:
-            - name: usb-bus
-              mountPath: /dev/bus/usb
-            - name: sysfs
-              mountPath: /sys
-            securityContext:
-              privileged: true
-          restartPolicy: Never
-          volumes:
-          - name: usb-bus
-            hostPath:
-              path: /dev/bus/usb
-              type: Directory
-          - name: sysfs
-            hostPath:
-              path: /sys
-              type: Directory
+      nodeSelector:
+        kubernetes.io/hostname: vm3-2f48f538  
+      containers:
+      - name: usb-check
+        image: uncledhafer/usb-check:latest
+        volumeMounts:
+        - name: usb-bus
+          mountPath: /dev/bus/usb
+        - name: sysfs
+          mountPath: /sys
+        securityContext:
+          privileged: true
+      restartPolicy: Never
+      volumes:
+      - name: usb-bus
+        hostPath:
+          path: /dev/bus/usb
+          type: Directory
+      - name: sysfs
+        hostPath:
+          path: /sys
+          type: Directory
+  backoffLimit: 0
 
