@@ -10,7 +10,7 @@ spec:
         app: usb-check
     spec:
       nodeSelector:
-        kubernetes.io/hostname: vm3-2f48f538  
+        kubernetes.io/hostname: vm3-847ee34c  
       containers:
       - name: usb-check
         image: uncledhafer/usb-check:latest

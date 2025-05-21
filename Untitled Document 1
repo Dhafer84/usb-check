@@ -1,0 +1,2331 @@
+# HELP jvm_memory_pool_allocated_bytes_total Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.
+# TYPE jvm_memory_pool_allocated_bytes_total counter
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'profiled nmethods'",} 3.4220672E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Old Gen",} 2.16508928E8
+jvm_memory_pool_allocated_bytes_total{pool="G1 Eden Space",} 2.375024632E9
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-profiled nmethods'",} 1.3247744E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Survivor Space",} 5.9568016E7
+jvm_memory_pool_allocated_bytes_total{pool="Compressed Class Space",} 1.4647168E7
+jvm_memory_pool_allocated_bytes_total{pool="Metaspace",} 1.16513216E8
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-nmethods'",} 2515968.0
+# HELP default_jenkins_executors_available Executors Available
+# TYPE default_jenkins_executors_available gauge
+default_jenkins_executors_available{label="built-in",} 2.0
+default_jenkins_executors_available{label="docker-agent",} 2.0
+default_jenkins_executors_available{label="vm3",} 1.0
+default_jenkins_executors_available{label="vm4",} 1.0
+# HELP default_jenkins_executors_busy Executors Busy
+# TYPE default_jenkins_executors_busy gauge
+default_jenkins_executors_busy{label="built-in",} 0.0
+default_jenkins_executors_busy{label="docker-agent",} 0.0
+default_jenkins_executors_busy{label="vm3",} 0.0
+default_jenkins_executors_busy{label="vm4",} 0.0
+# HELP default_jenkins_executors_connecting Executors Connecting
+# TYPE default_jenkins_executors_connecting gauge
+default_jenkins_executors_connecting{label="built-in",} 0.0
+default_jenkins_executors_connecting{label="docker-agent",} 0.0
+default_jenkins_executors_connecting{label="vm3",} 0.0
+default_jenkins_executors_connecting{label="vm4",} 0.0
+# HELP default_jenkins_executors_defined Executors Defined
+# TYPE default_jenkins_executors_defined gauge
+default_jenkins_executors_defined{label="built-in",} 2.0
+default_jenkins_executors_defined{label="docker-agent",} 2.0
+default_jenkins_executors_defined{label="vm3",} 1.0
+default_jenkins_executors_defined{label="vm4",} 1.0
+# HELP default_jenkins_executors_idle Executors Idle
+# TYPE default_jenkins_executors_idle gauge
+default_jenkins_executors_idle{label="built-in",} 2.0
+default_jenkins_executors_idle{label="docker-agent",} 2.0
+default_jenkins_executors_idle{label="vm3",} 1.0
+default_jenkins_executors_idle{label="vm4",} 1.0
+# HELP default_jenkins_executors_online Executors Online
+# TYPE default_jenkins_executors_online gauge
+default_jenkins_executors_online{label="built-in",} 2.0
+default_jenkins_executors_online{label="docker-agent",} 2.0
+default_jenkins_executors_online{label="vm3",} 1.0
+default_jenkins_executors_online{label="vm4",} 1.0
+# HELP default_jenkins_executors_queue_length Executors Queue Length
+# TYPE default_jenkins_executors_queue_length gauge
+default_jenkins_executors_queue_length{label="built-in",} 0.0
+default_jenkins_executors_queue_length{label="docker-agent",} 0.0
+default_jenkins_executors_queue_length{label="vm3",} 0.0
+default_jenkins_executors_queue_length{label="vm4",} 0.0
+# HELP jvm_gc_collection_seconds Time spent in a given JVM garbage collector in seconds.
+# TYPE jvm_gc_collection_seconds summary
+jvm_gc_collection_seconds_count{gc="G1 Young Generation",} 32.0
+jvm_gc_collection_seconds_sum{gc="G1 Young Generation",} 0.281
+jvm_gc_collection_seconds_count{gc="G1 Old Generation",} 0.0
+jvm_gc_collection_seconds_sum{gc="G1 Old Generation",} 0.0
+# HELP default_jenkins_version_info Jenkins Application Version
+# TYPE default_jenkins_version_info gauge
+default_jenkins_version_info{version="2.504.1",} 1.0
+# HELP default_jenkins_up Is Jenkins ready to receive requests
+# TYPE default_jenkins_up gauge
+default_jenkins_up 1.0
+# HELP default_jenkins_uptime Time since Jenkins machine was initialized
+# TYPE default_jenkins_uptime gauge
+default_jenkins_uptime 535465.0
+# HELP default_jenkins_nodes_online Jenkins nodes online status
+# TYPE default_jenkins_nodes_online gauge
+default_jenkins_nodes_online{node="vm3",} 1.0
+default_jenkins_nodes_online{node="vm4",} 1.0
+# HELP default_jenkins_quietdown Is Jenkins in quiet mode
+# TYPE default_jenkins_quietdown gauge
+default_jenkins_quietdown 0.0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 63.72
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.747734559439E9
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 416.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1048576.0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 8.031236096E9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 6.03787264E8
+# HELP jvm_classes_currently_loaded The number of classes that are currently loaded in the JVM
+# TYPE jvm_classes_currently_loaded gauge
+jvm_classes_currently_loaded 20906.0
+# HELP jvm_classes_loaded_total The total number of classes that have been loaded since the JVM has started execution
+# TYPE jvm_classes_loaded_total counter
+jvm_classes_loaded_total 20919.0
+# HELP jvm_classes_unloaded_total The total number of classes that have been unloaded since the JVM has started execution
+# TYPE jvm_classes_unloaded_total counter
+jvm_classes_unloaded_total 13.0
+# HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_bytes gauge
+jvm_buffer_pool_used_bytes{pool="mapped",} 1.0
+jvm_buffer_pool_used_bytes{pool="direct",} 380394.0
+jvm_buffer_pool_used_bytes{pool="mapped - 'non-volatile memory'",} 0.0
+# HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_capacity_bytes gauge
+jvm_buffer_pool_capacity_bytes{pool="mapped",} 1.0
+jvm_buffer_pool_capacity_bytes{pool="direct",} 380394.0
+jvm_buffer_pool_capacity_bytes{pool="mapped - 'non-volatile memory'",} 0.0
+# HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_buffers gauge
+jvm_buffer_pool_used_buffers{pool="mapped",} 1.0
+jvm_buffer_pool_used_buffers{pool="direct",} 29.0
+jvm_buffer_pool_used_buffers{pool="mapped - 'non-volatile memory'",} 0.0
+# HELP jvm_threads_current Current thread count of a JVM
+# TYPE jvm_threads_current gauge
+jvm_threads_current 44.0
+# HELP jvm_threads_daemon Daemon thread count of a JVM
+# TYPE jvm_threads_daemon gauge
+jvm_threads_daemon 29.0
+# HELP jvm_threads_peak Peak thread count of a JVM
+# TYPE jvm_threads_peak gauge
+jvm_threads_peak 87.0
+# HELP jvm_threads_started_total Started thread count of a JVM
+# TYPE jvm_threads_started_total counter
+jvm_threads_started_total 308.0
+# HELP jvm_threads_deadlocked Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers
+# TYPE jvm_threads_deadlocked gauge
+jvm_threads_deadlocked 0.0
+# HELP jvm_threads_deadlocked_monitor Cycles of JVM-threads that are in deadlock waiting to acquire object monitors
+# TYPE jvm_threads_deadlocked_monitor gauge
+jvm_threads_deadlocked_monitor 0.0
+# HELP jvm_threads_state Current count of threads by state
+# TYPE jvm_threads_state gauge
+jvm_threads_state{state="NEW",} 0.0
+jvm_threads_state{state="TERMINATED",} 0.0
+jvm_threads_state{state="RUNNABLE",} 13.0
+jvm_threads_state{state="BLOCKED",} 0.0
+jvm_threads_state{state="WAITING",} 14.0
+jvm_threads_state{state="TIMED_WAITING",} 17.0
+jvm_threads_state{state="UNKNOWN",} 0.0
+# HELP jvm_info VM version info
+# TYPE jvm_info gauge
+jvm_info{runtime="OpenJDK Runtime Environment",vendor="Eclipse Adoptium",version="17.0.15+6",} 1.0
+# HELP default_jenkins_builds_duration_milliseconds_summary Summary of Jenkins build times in milliseconds by Job
+# TYPE default_jenkins_builds_duration_milliseconds_summary summary
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="sans agent",repo="NA",buildable="true",} 1.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="sans agent",repo="NA",buildable="true",} 36.0
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="test2",repo="NA",buildable="true",} 4.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="test2",repo="NA",buildable="true",} 9720.0
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",} 22.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",} 2108981.0
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="Test",repo="NA",buildable="true",} 8.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="Test",repo="NA",buildable="true",} 603124.0
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 30.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1793355.0
+default_jenkins_builds_duration_milliseconds_summary_count{jenkins_job="testK3S",repo="NA",buildable="true",} 56.0
+default_jenkins_builds_duration_milliseconds_summary_sum{jenkins_job="testK3S",repo="NA",buildable="true",} 1228555.0
+# HELP default_jenkins_builds_success_build_count_total Successful build count
+# TYPE default_jenkins_builds_success_build_count_total counter
+default_jenkins_builds_success_build_count_total{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 2.0
+# HELP default_jenkins_builds_total_build_count_total Total build count
+# TYPE default_jenkins_builds_total_build_count_total counter
+default_jenkins_builds_total_build_count_total{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 2.0
+# HELP default_jenkins_builds_health_score Health score of a job
+# TYPE default_jenkins_builds_health_score gauge
+default_jenkins_builds_health_score{jenkins_job="sans agent",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_health_score{jenkins_job="test2",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_health_score{jenkins_job="usb-check-job",repo="NA",buildable="true",} 80.0
+default_jenkins_builds_health_score{jenkins_job="Test",repo="NA",buildable="true",} 100.0
+default_jenkins_builds_health_score{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 100.0
+default_jenkins_builds_health_score{jenkins_job="testK3S",repo="NA",buildable="true",} 0.0
+# HELP default_jenkins_builds_available_builds_count Number of builds available for this job
+# TYPE default_jenkins_builds_available_builds_count gauge
+default_jenkins_builds_available_builds_count{jenkins_job="sans agent",repo="NA",buildable="true",} 1.0
+default_jenkins_builds_available_builds_count{jenkins_job="test2",repo="NA",buildable="true",} 4.0
+default_jenkins_builds_available_builds_count{jenkins_job="usb-check-job",repo="NA",buildable="true",} 22.0
+default_jenkins_builds_available_builds_count{jenkins_job="Test",repo="NA",buildable="true",} 8.0
+default_jenkins_builds_available_builds_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 30.0
+default_jenkins_builds_available_builds_count{jenkins_job="testK3S",repo="NA",buildable="true",} 56.0
+# HELP default_jenkins_builds_discard_active Indicates if the build discarder is active for the given job
+# TYPE default_jenkins_builds_discard_active gauge
+default_jenkins_builds_discard_active{jenkins_job="sans agent",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_discard_active{jenkins_job="test2",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_discard_active{jenkins_job="usb-check-job",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_discard_active{jenkins_job="Test",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_discard_active{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_discard_active{jenkins_job="testK3S",repo="NA",buildable="true",} 0.0
+# HELP default_jenkins_builds_last_build_result_ordinal Build status of a job.
+# TYPE default_jenkins_builds_last_build_result_ordinal gauge
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="sans agent",repo="NA",buildable="true",} 2.0
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="test2",repo="NA",buildable="true",} 2.0
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="Test",repo="NA",buildable="true",} 4.0
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_last_build_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",} 2.0
+# HELP default_jenkins_builds_last_build_result Build status of a job as a boolean (0 or 1)
+# TYPE default_jenkins_builds_last_build_result gauge
+default_jenkins_builds_last_build_result{jenkins_job="sans agent",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_last_build_result{jenkins_job="test2",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_last_build_result{jenkins_job="usb-check-job",repo="NA",buildable="true",} 1.0
+default_jenkins_builds_last_build_result{jenkins_job="Test",repo="NA",buildable="true",} 0.0
+default_jenkins_builds_last_build_result{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1.0
+default_jenkins_builds_last_build_result{jenkins_job="testK3S",repo="NA",buildable="true",} 0.0
+# HELP default_jenkins_builds_last_build_duration_milliseconds Build times in milliseconds of last build
+# TYPE default_jenkins_builds_last_build_duration_milliseconds gauge
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="sans agent",repo="NA",buildable="true",} 36.0
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="test2",repo="NA",buildable="true",} 3274.0
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="usb-check-job",repo="NA",buildable="true",} 86152.0
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="Test",repo="NA",buildable="true",} 7860.0
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 87649.0
+default_jenkins_builds_last_build_duration_milliseconds{jenkins_job="testK3S",repo="NA",buildable="true",} 50939.0
+# HELP default_jenkins_builds_last_build_waiting_milliseconds Duration this Run spent queuing, that is the wall time from when it entered the queue until it left the queue.
+# TYPE default_jenkins_builds_last_build_waiting_milliseconds gauge
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="sans agent",repo="NA",buildable="true",} 8.0
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="test2",repo="NA",buildable="true",} 22.0
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="usb-check-job",repo="NA",buildable="true",} 2.0
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="Test",repo="NA",buildable="true",} 4.0
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 2.0
+default_jenkins_builds_last_build_waiting_milliseconds{jenkins_job="testK3S",repo="NA",buildable="true",} 45.0
+# HELP default_jenkins_builds_last_build_start_time_milliseconds Last build start timestamp in milliseconds
+# TYPE default_jenkins_builds_last_build_start_time_milliseconds gauge
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="sans agent",repo="NA",buildable="true",} 1.747731837705E12
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="test2",repo="NA",buildable="true",} 1.74578446223E12
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="usb-check-job",repo="NA",buildable="true",} 1.747732839029E12
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="Test",repo="NA",buildable="true",} 1.747732530391E12
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1.747734792758E12
+default_jenkins_builds_last_build_start_time_milliseconds{jenkins_job="testK3S",repo="NA",buildable="true",} 1.74751054784E12
+# HELP default_jenkins_builds_last_stage_duration_milliseconds_summary Summary of Jenkins build times by Job and Stage in the last build
+# TYPE default_jenkins_builds_last_stage_duration_milliseconds_summary summary
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Deploy on K3s",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Deploy on K3s",} 308.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 715.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Build Image",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Build Image",} 1277.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Surveillance USB en direct",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Surveillance USB en direct",} 62115.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Checkout",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Checkout",} 1730.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Surveillance USB en direct",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Surveillance USB en direct",} 62560.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Checkout",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Checkout",} 699.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="testK3S",repo="NA",buildable="true",stage="Push Docker Image vers DockerHub",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="testK3S",repo="NA",buildable="true",stage="Push Docker Image vers DockerHub",} 14726.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="testK3S",repo="NA",buildable="true",stage="Checkout Code depuis GitHub",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="testK3S",repo="NA",buildable="true",stage="Checkout Code depuis GitHub",} 9469.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="testK3S",repo="NA",buildable="true",stage="Build Docker Image sur VM4",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="testK3S",repo="NA",buildable="true",stage="Build Docker Image sur VM4",} 21018.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 1931.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Logs Check",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Logs Check",} 10350.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Deploy on K3s",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Deploy on K3s",} 329.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Push to DockerHub",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Push to DockerHub",} 6781.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Init",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Init",} 93.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Build Image",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Build Image",} 1271.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Push to DockerHub",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Push to DockerHub",} 6773.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_count{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Logs Check",} 1.0
+default_jenkins_builds_last_stage_duration_milliseconds_summary_sum{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Logs Check",} 10383.0
+# HELP default_jenkins_builds_last_stage_result_ordinal Build status of a Stage. 0=NOT_EXECUTED,1=ABORTED,2=SUCCESS,3=IN_PROGRESS,4=PAUSED_PENDING_INPUT,5=FAILED,6=UNSTABLE
+# TYPE default_jenkins_builds_last_stage_result_ordinal gauge
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="Test",repo="NA",buildable="true",stage="Test VM1",} 1.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="Test",repo="NA",buildable="true",stage="Test VM2",} 1.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Build Image",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Checkout",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",stage="Checkout Code depuis GitHub",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="test2",repo="NA",buildable="true",stage="Run Container sur VM1",} 5.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",stage="Validation sur VM5",} 5.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Logs Check",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Deploy on K3s",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",stage="Déploiement sur K3s",} 5.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Build Image",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Push to DockerHub",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Deploy on K3s",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Surveillance USB en direct",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Surveillance USB en direct",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Checkout",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",stage="Push Docker Image vers DockerHub",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="testK3S",repo="NA",buildable="true",stage="Build Docker Image sur VM4",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="test2",repo="NA",buildable="true",stage="Build Docker Image sur VM1",} 5.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="test2",repo="NA",buildable="true",stage="Test VM2",} 5.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Push to DockerHub",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Init",} 2.0
+default_jenkins_builds_last_stage_result_ordinal{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Logs Check",} 2.0
+# HELP default_jenkins_builds_last_build_logfile_size_bytes Build logfile size in bytes
+# TYPE default_jenkins_builds_last_build_logfile_size_bytes gauge
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="sans agent",repo="NA",buildable="true",} 2015.0
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="test2",repo="NA",buildable="true",} 7729.0
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="usb-check-job",repo="NA",buildable="true",} 28258.0
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="Test",repo="NA",buildable="true",} 4699.0
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 30668.0
+default_jenkins_builds_last_build_logfile_size_bytes{jenkins_job="testK3S",repo="NA",buildable="true",} 37376.0
+# HELP jvm_memory_objects_pending_finalization The number of objects waiting in the finalizer queue.
+# TYPE jvm_memory_objects_pending_finalization gauge
+jvm_memory_objects_pending_finalization 0.0
+# HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_used gauge
+jvm_memory_bytes_used{area="heap",} 2.38529024E8
+jvm_memory_bytes_used{area="nonheap",} 1.78028704E8
+# HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_committed gauge
+jvm_memory_bytes_committed{area="heap",} 5.41065216E8
+jvm_memory_bytes_committed{area="nonheap",} 1.83631872E8
+# HELP jvm_memory_bytes_max Max (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_max gauge
+jvm_memory_bytes_max{area="heap",} 2.025848832E9
+jvm_memory_bytes_max{area="nonheap",} -1.0
+# HELP jvm_memory_bytes_init Initial bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_init gauge
+jvm_memory_bytes_init{area="heap",} 1.27926272E8
+jvm_memory_bytes_init{area="nonheap",} 7667712.0
+# HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_used gauge
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-nmethods'",} 2515968.0
+jvm_memory_pool_bytes_used{pool="Metaspace",} 1.16831048E8
+jvm_memory_pool_bytes_used{pool="CodeHeap 'profiled nmethods'",} 3.2185856E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 1.4651352E7
+jvm_memory_pool_bytes_used{pool="G1 Eden Space",} 7.340032E7
+jvm_memory_pool_bytes_used{pool="G1 Old Gen",} 1.3996288E8
+jvm_memory_pool_bytes_used{pool="G1 Survivor Space",} 2.5165824E7
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-profiled nmethods'",} 1.184448E7
+# HELP jvm_memory_pool_bytes_committed Committed bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_committed gauge
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-nmethods'",} 2686976.0
+jvm_memory_pool_bytes_committed{pool="Metaspace",} 1.19865344E8
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'profiled nmethods'",} 3.2833536E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 1.6121856E7
+jvm_memory_pool_bytes_committed{pool="G1 Eden Space",} 3.00941312E8
+jvm_memory_pool_bytes_committed{pool="G1 Old Gen",} 2.1495808E8
+jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",} 2.5165824E7
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-profiled nmethods'",} 1.212416E7
+# HELP jvm_memory_pool_bytes_max Max bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_max gauge
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-nmethods'",} 5840896.0
+jvm_memory_pool_bytes_max{pool="Metaspace",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'profiled nmethods'",} 1.22908672E8
+jvm_memory_pool_bytes_max{pool="Compressed Class Space",} 1.073741824E9
+jvm_memory_pool_bytes_max{pool="G1 Eden Space",} -1.0
+jvm_memory_pool_bytes_max{pool="G1 Old Gen",} 2.025848832E9
+jvm_memory_pool_bytes_max{pool="G1 Survivor Space",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-profiled nmethods'",} 1.22908672E8
+# HELP jvm_memory_pool_bytes_init Initial bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_init gauge
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Metaspace",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'profiled nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Compressed Class Space",} 0.0
+jvm_memory_pool_bytes_init{pool="G1 Eden Space",} 2.62144E7
+jvm_memory_pool_bytes_init{pool="G1 Old Gen",} 1.01711872E8
+jvm_memory_pool_bytes_init{pool="G1 Survivor Space",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-profiled nmethods'",} 2555904.0
+# HELP jvm_memory_pool_collection_used_bytes Used bytes after last collection of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_used_bytes gauge
+jvm_memory_pool_collection_used_bytes{pool="G1 Eden Space",} 0.0
+jvm_memory_pool_collection_used_bytes{pool="G1 Old Gen",} 9.10976E7
+jvm_memory_pool_collection_used_bytes{pool="G1 Survivor Space",} 2.5165824E7
+# HELP jvm_memory_pool_collection_committed_bytes Committed after last collection bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_committed_bytes gauge
+jvm_memory_pool_collection_committed_bytes{pool="G1 Eden Space",} 3.00941312E8
+jvm_memory_pool_collection_committed_bytes{pool="G1 Old Gen",} 1.19537664E8
+jvm_memory_pool_collection_committed_bytes{pool="G1 Survivor Space",} 2.5165824E7
+# HELP jvm_memory_pool_collection_max_bytes Max bytes after last collection of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_max_bytes gauge
+jvm_memory_pool_collection_max_bytes{pool="G1 Eden Space",} -1.0
+jvm_memory_pool_collection_max_bytes{pool="G1 Old Gen",} 2.025848832E9
+jvm_memory_pool_collection_max_bytes{pool="G1 Survivor Space",} -1.0
+# HELP jvm_memory_pool_collection_init_bytes Initial after last collection bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_init_bytes gauge
+jvm_memory_pool_collection_init_bytes{pool="G1 Eden Space",} 2.62144E7
+jvm_memory_pool_collection_init_bytes{pool="G1 Old Gen",} 1.01711872E8
+jvm_memory_pool_collection_init_bytes{pool="G1 Survivor Space",} 0.0
+# HELP vm_memory_total_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.total.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_used_window_1h summary
+vm_memory_total_used_window_1h{quantile="0.5",} 4.11952952E8
+vm_memory_total_used_window_1h{quantile="0.75",} 4.86317728E8
+vm_memory_total_used_window_1h{quantile="0.95",} 6.039397215999999E8
+vm_memory_total_used_window_1h{quantile="0.98",} 6.20626448E8
+vm_memory_total_used_window_1h{quantile="0.99",} 6.20626448E8
+vm_memory_total_used_window_1h{quantile="0.999",} 6.20626448E8
+vm_memory_total_used_window_1h_count 35.0
+# HELP jenkins_queue_blocked_history Generated from Dropwizard metric import (metric=jenkins.queue.blocked.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_queue_blocked_history summary
+jenkins_queue_blocked_history{quantile="0.5",} 0.0
+jenkins_queue_blocked_history{quantile="0.75",} 0.0
+jenkins_queue_blocked_history{quantile="0.95",} 0.0
+jenkins_queue_blocked_history{quantile="0.98",} 0.0
+jenkins_queue_blocked_history{quantile="0.99",} 0.0
+jenkins_queue_blocked_history{quantile="0.999",} 0.0
+jenkins_queue_blocked_history_count 35.0
+# HELP vm_memory_pools_Metaspace_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_used_window_1h summary
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.5",} 1.16438512E8
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.75",} 1.16696656E8
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.95",} 1.168136496E8
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.98",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.99",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_1h{quantile="0.999",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_1h_count 35.0
+# HELP jenkins_job_count_value Generated from Dropwizard metric import (metric=jenkins.job.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$15)
+# TYPE jenkins_job_count_value gauge
+jenkins_job_count_value 6.0
+# HELP vm_memory_pools_Compressed_Class_Space_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_usage_x100_history summary
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.5",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.75",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.95",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.98",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.99",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history{quantile="0.999",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_history_count 35.0
+# HELP vm_memory_pools_Metaspace_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_usage_x100_history summary
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.5",} 97.0
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.75",} 97.0
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.95",} 98.0
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.98",} 98.0
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.99",} 98.0
+vm_memory_pools_Metaspace_usage_x100_history{quantile="0.999",} 98.0
+vm_memory_pools_Metaspace_usage_x100_history_count 35.0
+# HELP system_cpu_load_x100_window_15m Generated from Dropwizard metric import (metric=system.cpu.load.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE system_cpu_load_x100_window_15m summary
+system_cpu_load_x100_window_15m{quantile="0.5",} 150.0
+system_cpu_load_x100_window_15m{quantile="0.75",} 198.0
+system_cpu_load_x100_window_15m{quantile="0.95",} 273.9999999999999
+system_cpu_load_x100_window_15m{quantile="0.98",} 294.0
+system_cpu_load_x100_window_15m{quantile="0.99",} 294.0
+system_cpu_load_x100_window_15m{quantile="0.999",} 294.0
+system_cpu_load_x100_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_used_window_1h summary
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.75",} 2.5690112E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.95",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.98",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.99",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h{quantile="0.999",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_1h_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__init Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__init gauge
+vm_memory_pools_CodeHeap__profiled_nmethods__init 2555904.0
+# HELP vm_memory_pools_Metaspace_usage Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_Metaspace_usage gauge
+vm_memory_pools_Metaspace_usage 0.9746887307143589
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.5",} 3.260416E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.75",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.95",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.98",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.99",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m{quantile="0.999",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_5m_count 35.0
+# HELP jenkins_runs_unstable_total Generated from Dropwizard metric import (metric=jenkins.runs.unstable, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_unstable_total counter
+jenkins_runs_unstable_total 0.0
+# HELP jenkins_plugins_failed Generated from Dropwizard metric import (metric=jenkins.plugins.failed, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$22)
+# TYPE jenkins_plugins_failed gauge
+jenkins_plugins_failed 0.0
+# HELP vm_count Generated from Dropwizard metric import (metric=vm.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$550/0x0000000100a4e6d0)
+# TYPE vm_count gauge
+vm_count 44.0
+# HELP vm_terminated_count Generated from Dropwizard metric import (metric=vm.terminated.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_terminated_count gauge
+vm_terminated_count 0.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.5",} 1.1838336E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.75",} 1.2017376E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.95",} 1.2087264E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.98",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.99",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m{quantile="0.999",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_5m_count 35.0
+# HELP vm_cpu_load_x100_history Generated from Dropwizard metric import (metric=vm.cpu.load.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_cpu_load_x100_history summary
+vm_cpu_load_x100_history{quantile="0.5",} 1.0
+vm_cpu_load_x100_history{quantile="0.75",} 1.0
+vm_cpu_load_x100_history{quantile="0.95",} 3.0
+vm_cpu_load_x100_history{quantile="0.98",} 4.0
+vm_cpu_load_x100_history{quantile="0.99",} 5.0
+vm_cpu_load_x100_history{quantile="0.999",} 14.0
+vm_cpu_load_x100_history_count 35.0
+# HELP vm_cpu_load_x100_window_15m Generated from Dropwizard metric import (metric=vm.cpu.load.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_cpu_load_x100_window_15m summary
+vm_cpu_load_x100_window_15m{quantile="0.5",} 3.0
+vm_cpu_load_x100_window_15m{quantile="0.75",} 5.0
+vm_cpu_load_x100_window_15m{quantile="0.95",} 87.79999999999964
+vm_cpu_load_x100_window_15m{quantile="0.98",} 155.0
+vm_cpu_load_x100_window_15m{quantile="0.99",} 155.0
+vm_cpu_load_x100_window_15m{quantile="0.999",} 155.0
+vm_cpu_load_x100_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_used_window_5m summary
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.5",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.75",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.95",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.98",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.99",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m{quantile="0.999",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__used_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__used_history summary
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.5",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.75",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.95",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.98",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.99",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history{quantile="0.999",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_history_count 35.0
+# HELP vm_memory_total_max Generated from Dropwizard metric import (metric=vm.memory.total.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$531/0x00000001009f4a28)
+# TYPE vm_memory_total_max gauge
+vm_memory_total_max -1.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.5",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.75",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.95",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.98",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.99",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m{quantile="0.999",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_used_window_15m summary
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.5",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.75",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.95",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.98",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.99",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m{quantile="0.999",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__used_window_15m summary
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.5",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.75",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.95",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.98",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.99",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m{quantile="0.999",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_15m_count 35.0
+# HELP jenkins_job_count_history Generated from Dropwizard metric import (metric=jenkins.job.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_job_count_history summary
+jenkins_job_count_history{quantile="0.5",} 6.0
+jenkins_job_count_history{quantile="0.75",} 6.0
+jenkins_job_count_history{quantile="0.95",} 6.0
+jenkins_job_count_history{quantile="0.98",} 6.0
+jenkins_job_count_history{quantile="0.99",} 6.0
+jenkins_job_count_history{quantile="0.999",} 6.0
+jenkins_job_count_history_count 35.0
+# HELP vm_total_started_count Generated from Dropwizard metric import (metric=vm.total_started.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$553/0x0000000100a4ed48)
+# TYPE vm_total_started_count gauge
+vm_total_started_count 308.0
+# HELP jenkins_task_execution_duration Generated from Dropwizard metric import (metric=jenkins.task.execution.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_task_execution_duration summary
+jenkins_task_execution_duration{quantile="0.5",} 87.67
+jenkins_task_execution_duration{quantile="0.75",} 87.67
+jenkins_task_execution_duration{quantile="0.95",} 93.0
+jenkins_task_execution_duration{quantile="0.98",} 95.56500000000001
+jenkins_task_execution_duration{quantile="0.99",} 95.56500000000001
+jenkins_task_execution_duration{quantile="0.999",} 95.56500000000001
+jenkins_task_execution_duration_count 4.0
+# HELP jenkins_queue_blocked_value Generated from Dropwizard metric import (metric=jenkins.queue.blocked.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$5)
+# TYPE jenkins_queue_blocked_value gauge
+jenkins_queue_blocked_value 0.0
+# HELP vm_memory_pools_G1_Old_Gen_committed Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_G1_Old_Gen_committed gauge
+vm_memory_pools_G1_Old_Gen_committed 2.1495808E8
+# HELP vm_memory_pools_CodeHeap__non_nmethods__init Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__init gauge
+vm_memory_pools_CodeHeap__non_nmethods__init 2555904.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__committed Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__committed gauge
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed 1.212416E7
+# HELP vm_memory_heap_init Generated from Dropwizard metric import (metric=vm.memory.heap.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$533/0x00000001009f8000)
+# TYPE vm_memory_heap_init gauge
+vm_memory_heap_init 1.27926272E8
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__max Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__max gauge
+vm_memory_pools_CodeHeap__non_profiled_nmethods__max 1.22908672E8
+# HELP vm_memory_pools_G1_Old_Gen_used Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_G1_Old_Gen_used gauge
+vm_memory_pools_G1_Old_Gen_used 1.3996288E8
+# HELP vm_memory_non_heap_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.non-heap.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_used_window_5m summary
+vm_memory_non_heap_used_window_5m{quantile="0.5",} 1.77831528E8
+vm_memory_non_heap_used_window_5m{quantile="0.75",} 1.78323124E8
+vm_memory_non_heap_used_window_5m{quantile="0.95",} 1.786339524E8
+vm_memory_non_heap_used_window_5m{quantile="0.98",} 1.78638416E8
+vm_memory_non_heap_used_window_5m{quantile="0.99",} 1.78638416E8
+vm_memory_non_heap_used_window_5m{quantile="0.999",} 1.78638416E8
+vm_memory_non_heap_used_window_5m_count 35.0
+# HELP jenkins_job_waiting_duration Generated from Dropwizard metric import (metric=jenkins.job.waiting.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_waiting_duration summary
+jenkins_job_waiting_duration{quantile="0.5",} 0.001
+jenkins_job_waiting_duration{quantile="0.75",} 0.001
+jenkins_job_waiting_duration{quantile="0.95",} 0.003
+jenkins_job_waiting_duration{quantile="0.98",} 0.003
+jenkins_job_waiting_duration{quantile="0.99",} 0.003
+jenkins_job_waiting_duration{quantile="0.999",} 0.003
+jenkins_job_waiting_duration_count 2.0
+# HELP vm_memory_pools_G1_Old_Gen_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_committed_window_15m summary
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.5",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.75",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.95",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.98",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.99",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m{quantile="0.999",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.5",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.75",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.95",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.98",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.99",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m{quantile="0.999",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h summary
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.5",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.75",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.95",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.98",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.99",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h{quantile="0.999",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_1h_count 35.0
+# HELP jenkins_job_total_duration Generated from Dropwizard metric import (metric=jenkins.job.total.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_total_duration summary
+jenkins_job_total_duration{quantile="0.5",} 87.65100000000001
+jenkins_job_total_duration{quantile="0.75",} 87.65100000000001
+jenkins_job_total_duration{quantile="0.95",} 95.55600000000001
+jenkins_job_total_duration{quantile="0.98",} 95.55600000000001
+jenkins_job_total_duration{quantile="0.99",} 95.55600000000001
+jenkins_job_total_duration{quantile="0.999",} 95.55600000000001
+jenkins_job_total_duration_count 2.0
+# HELP jenkins_queue_pending_value Generated from Dropwizard metric import (metric=jenkins.queue.pending.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$8)
+# TYPE jenkins_queue_pending_value gauge
+jenkins_queue_pending_value 0.0
+# HELP vm_memory_pools_G1_Eden_Space_committed Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_G1_Eden_Space_committed gauge
+vm_memory_pools_G1_Eden_Space_committed 3.00941312E8
+# HELP vm_memory_pools_Compressed_Class_Space_max Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_Compressed_Class_Space_max gauge
+vm_memory_pools_Compressed_Class_Space_max 1.073741824E9
+# HELP vm_timed_waiting_count Generated from Dropwizard metric import (metric=vm.timed_waiting.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_timed_waiting_count gauge
+vm_timed_waiting_count 17.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.5",} 1.179968E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.75",} 1.185344E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.95",} 1.2084864E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.98",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.99",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m{quantile="0.999",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_15m_count 35.0
+# HELP http_responseCodes_badRequest_total Generated from Dropwizard metric import (metric=http.responseCodes.badRequest, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_badRequest_total counter
+http_responseCodes_badRequest_total 0.0
+# HELP http_activeRequests Generated from Dropwizard metric import (metric=http.activeRequests, type=com.codahale.metrics.Counter)
+# TYPE http_activeRequests gauge
+http_activeRequests 0.0
+# HELP jenkins_runs_aborted_total Generated from Dropwizard metric import (metric=jenkins.runs.aborted, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_aborted_total counter
+jenkins_runs_aborted_total 0.0
+# HELP vm_memory_pools_G1_Survivor_Space_used_after_gc Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used-after-gc, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$545/0x00000001009fa2d8)
+# TYPE vm_memory_pools_G1_Survivor_Space_used_after_gc gauge
+vm_memory_pools_G1_Survivor_Space_used_after_gc 2.5165824E7
+# HELP vm_memory_pools_Compressed_Class_Space_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_committed_window_15m summary
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.5",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.75",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.95",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.98",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.99",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m{quantile="0.999",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_15m_count 35.0
+# HELP vm_cpu_load Generated from Dropwizard metric import (metric=vm.cpu.load, type=jenkins.metrics.impl.VMMetricProviderImpl$CpuUsageGauge)
+# TYPE vm_cpu_load gauge
+vm_cpu_load 0.012730744748567792
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__max Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__max gauge
+vm_memory_pools_CodeHeap__profiled_nmethods__max 1.22908672E8
+# HELP jenkins_health_check_duration Generated from Dropwizard metric import (metric=jenkins.health-check.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_health_check_duration summary
+jenkins_health_check_duration{quantile="0.5",} 0.00104761
+jenkins_health_check_duration{quantile="0.75",} 0.001266102
+jenkins_health_check_duration{quantile="0.95",} 0.001266102
+jenkins_health_check_duration{quantile="0.98",} 0.001266102
+jenkins_health_check_duration{quantile="0.99",} 0.0037601630000000004
+jenkins_health_check_duration{quantile="0.999",} 0.009097954
+jenkins_health_check_duration_count 9.0
+# HELP vm_memory_non_heap_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.non-heap.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_usage_x100_window_15m summary
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.5",} 97.0
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.75",} 97.0
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.95",} 98.0
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.98",} 98.0
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.99",} 98.0
+vm_memory_non_heap_usage_x100_window_15m{quantile="0.999",} 98.0
+vm_memory_non_heap_usage_x100_window_15m_count 35.0
+# HELP vm_memory_heap_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.heap.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_usage_x100_window_1h summary
+vm_memory_heap_usage_x100_window_1h{quantile="0.5",} 12.0
+vm_memory_heap_usage_x100_window_1h{quantile="0.75",} 16.0
+vm_memory_heap_usage_x100_window_1h{quantile="0.95",} 21.199999999999996
+vm_memory_heap_usage_x100_window_1h{quantile="0.98",} 22.0
+vm_memory_heap_usage_x100_window_1h{quantile="0.99",} 22.0
+vm_memory_heap_usage_x100_window_1h{quantile="0.999",} 22.0
+vm_memory_heap_usage_x100_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_used_window_15m summary
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.5",} 7.1303168E7
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.75",} 1.66723584E8
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.95",} 2.78921216E8
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.98",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.99",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_15m{quantile="0.999",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_used Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_G1_Survivor_Space_used gauge
+vm_memory_pools_G1_Survivor_Space_used 2.5165824E7
+# HELP vm_memory_pools_Metaspace_committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_committed_history summary
+vm_memory_pools_Metaspace_committed_history{quantile="0.5",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history{quantile="0.75",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history{quantile="0.95",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history{quantile="0.98",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history{quantile="0.99",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history{quantile="0.999",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_history_count 35.0
+# HELP vm_memory_total_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.total.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_committed_window_5m summary
+vm_memory_total_committed_window_5m{quantile="0.5",} 7.24238336E8
+vm_memory_total_committed_window_5m{quantile="0.75",} 7.24631552E8
+vm_memory_total_committed_window_5m{quantile="0.95",} 7.24697088E8
+vm_memory_total_committed_window_5m{quantile="0.98",} 7.24697088E8
+vm_memory_total_committed_window_5m{quantile="0.99",} 7.24697088E8
+vm_memory_total_committed_window_5m{quantile="0.999",} 7.24697088E8
+vm_memory_total_committed_window_5m_count 35.0
+# HELP jenkins_executor_in_use_value Generated from Dropwizard metric import (metric=jenkins.executor.in-use.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$13)
+# TYPE jenkins_executor_in_use_value gauge
+jenkins_executor_in_use_value 0.0
+# HELP vm_memory_pools_G1_Old_Gen_used_after_gc Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used-after-gc, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$545/0x00000001009fa2d8)
+# TYPE vm_memory_pools_G1_Old_Gen_used_after_gc gauge
+vm_memory_pools_G1_Old_Gen_used_after_gc 9.10976E7
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__committed_history summary
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.5",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.75",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.95",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.98",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.99",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history{quantile="0.999",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__used_window_5m summary
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.5",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.75",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.95",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.98",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.99",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m{quantile="0.999",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_5m_count 35.0
+# HELP jenkins_queue_buildable_value Generated from Dropwizard metric import (metric=jenkins.queue.buildable.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$6)
+# TYPE jenkins_queue_buildable_value gauge
+jenkins_queue_buildable_value 0.0
+# HELP jenkins_task_scheduled_total Generated from Dropwizard metric import (metric=jenkins.task.scheduled, type=com.codahale.metrics.Meter)
+# TYPE jenkins_task_scheduled_total counter
+jenkins_task_scheduled_total 4.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__usage Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__usage gauge
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage 0.09637438764288332
+# HELP jenkins_project_count_history Generated from Dropwizard metric import (metric=jenkins.project.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_project_count_history summary
+jenkins_project_count_history{quantile="0.5",} 6.0
+jenkins_project_count_history{quantile="0.75",} 6.0
+jenkins_project_count_history{quantile="0.95",} 6.0
+jenkins_project_count_history{quantile="0.98",} 6.0
+jenkins_project_count_history{quantile="0.99",} 6.0
+jenkins_project_count_history{quantile="0.999",} 6.0
+jenkins_project_count_history_count 35.0
+# HELP vm_memory_pools_Metaspace_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_committed_window_5m summary
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.5",} 1.19668736E8
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.75",} 1.19799808E8
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.95",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.98",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.99",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_5m{quantile="0.999",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_5m_count 35.0
+# HELP vm_memory_pools_Metaspace_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_usage_x100_window_5m summary
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.5",} 97.0
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.75",} 97.0
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.95",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.98",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.99",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_5m{quantile="0.999",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_5m_count 35.0
+# HELP vm_deadlock_count Generated from Dropwizard metric import (metric=vm.deadlock.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$554/0x0000000100a4ef70)
+# TYPE vm_deadlock_count gauge
+vm_deadlock_count 0.0
+# HELP vm_memory_pools_Metaspace_used Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_Metaspace_used gauge
+vm_memory_pools_Metaspace_used 1.168314E8
+# HELP system_cpu_load_x100_history Generated from Dropwizard metric import (metric=system.cpu.load.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE system_cpu_load_x100_history summary
+system_cpu_load_x100_history{quantile="0.5",} 60.0
+system_cpu_load_x100_history{quantile="0.75",} 82.0
+system_cpu_load_x100_history{quantile="0.95",} 130.0
+system_cpu_load_x100_history{quantile="0.98",} 150.0
+system_cpu_load_x100_history{quantile="0.99",} 184.0
+system_cpu_load_x100_history{quantile="0.999",} 216.0
+system_cpu_load_x100_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h summary
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.5",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.75",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.95",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.98",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.99",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h{quantile="0.999",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_1h_count 35.0
+# HELP jenkins_executor_count_value Generated from Dropwizard metric import (metric=jenkins.executor.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$12)
+# TYPE jenkins_executor_count_value gauge
+jenkins_executor_count_value 4.0
+# HELP vm_memory_pools_Compressed_Class_Space_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_used_window_1h summary
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.5",} 1.464648E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.75",} 1.4648576E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.95",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.98",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.99",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h{quantile="0.999",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_1h_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_used_window_15m summary
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.5",} 1.464648E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.75",} 1.4648576E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.95",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.98",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.99",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m{quantile="0.999",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_15m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_committed_history summary
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.5",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.75",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.95",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.98",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.99",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history{quantile="0.999",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_history_count 35.0
+# HELP vm_memory_heap_used Generated from Dropwizard metric import (metric=vm.memory.heap.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$534/0x00000001009f8228)
+# TYPE vm_memory_heap_used gauge
+vm_memory_heap_used 2.38529024E8
+# HELP vm_memory_pools_CodeHeap__non_nmethods__committed Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__committed gauge
+vm_memory_pools_CodeHeap__non_nmethods__committed 2686976.0
+# HELP vm_gc_G1_Young_Generation_count Generated from Dropwizard metric import (metric=vm.gc.G1-Young-Generation.count, type=com.codahale.metrics.jvm.GarbageCollectorMetricSet$$Lambda$547/0x0000000100a4e058)
+# TYPE vm_gc_G1_Young_Generation_count gauge
+vm_gc_G1_Young_Generation_count 32.0
+# HELP vm_memory_total_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.total.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_used_window_5m summary
+vm_memory_total_used_window_5m{quantile="0.5",} 4.12533316E8
+vm_memory_total_used_window_5m{quantile="0.75",} 4.44507852E8
+vm_memory_total_used_window_5m{quantile="0.95",} 6.184073716E8
+vm_memory_total_used_window_5m{quantile="0.98",} 6.20626448E8
+vm_memory_total_used_window_5m{quantile="0.99",} 6.20626448E8
+vm_memory_total_used_window_5m{quantile="0.999",} 6.20626448E8
+vm_memory_total_used_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.5",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.75",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.95",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.98",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.99",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m{quantile="0.999",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_15m_count 35.0
+# HELP vm_memory_non_heap_committed Generated from Dropwizard metric import (metric=vm.memory.non-heap.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$540/0x00000001009f9390)
+# TYPE vm_memory_non_heap_committed gauge
+vm_memory_non_heap_committed 1.83631872E8
+# HELP jenkins_runs_success_total Generated from Dropwizard metric import (metric=jenkins.runs.success, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_success_total counter
+jenkins_runs_success_total 2.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h summary
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.5",} 3.1719424E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.75",} 3.2702464E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.95",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.98",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.99",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h{quantile="0.999",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_used_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_used_history summary
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.5",} 7.1303168E7
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.75",} 7.1303168E7
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.95",} 7.2351744E7
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.98",} 1.68820736E8
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.99",} 2.39075328E8
+vm_memory_pools_G1_Eden_Space_used_history{quantile="0.999",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_history_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_usage_x100_history summary
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.5",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.75",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.95",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.98",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.99",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history{quantile="0.999",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.5",} 1.179968E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.75",} 1.185344E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.95",} 1.2084864E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.98",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.99",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h{quantile="0.999",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_window_1h_count 35.0
+# HELP vm_memory_heap_committed Generated from Dropwizard metric import (metric=vm.memory.heap.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$536/0x00000001009f8678)
+# TYPE vm_memory_heap_committed gauge
+vm_memory_heap_committed 5.41065216E8
+# HELP vm_memory_pools_G1_Survivor_Space_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_used_window_5m summary
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.75",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.95",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.98",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.99",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m{quantile="0.999",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__usage Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__usage gauge
+vm_memory_pools_CodeHeap__non_nmethods__usage 0.43075035063113604
+# HELP vm_memory_pools_G1_Old_Gen_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_used_window_1h summary
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.5",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.75",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.95",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.98",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.99",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h{quantile="0.999",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_usage_x100_window_5m summary
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.5",} 23.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.75",} 35.25
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.95",} 92.29999999999998
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.98",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.99",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m{quantile="0.999",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_5m_count 35.0
+# HELP vm_new_count Generated from Dropwizard metric import (metric=vm.new.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_new_count gauge
+vm_new_count 0.0
+# HELP jenkins_plugins_inactive Generated from Dropwizard metric import (metric=jenkins.plugins.inactive, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$21)
+# TYPE jenkins_plugins_inactive gauge
+jenkins_plugins_inactive 0.0
+# HELP jenkins_node_offline_history Generated from Dropwizard metric import (metric=jenkins.node.offline.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_node_offline_history summary
+jenkins_node_offline_history{quantile="0.5",} 0.0
+jenkins_node_offline_history{quantile="0.75",} 0.0
+jenkins_node_offline_history{quantile="0.95",} 0.0
+jenkins_node_offline_history{quantile="0.98",} 0.0
+jenkins_node_offline_history{quantile="0.99",} 0.0
+jenkins_node_offline_history{quantile="0.999",} 0.0
+jenkins_node_offline_history_count 35.0
+# HELP system_cpu_load Generated from Dropwizard metric import (metric=system.cpu.load, type=jenkins.metrics.impl.VMMetricProviderImpl$1)
+# TYPE system_cpu_load gauge
+system_cpu_load 0.55078125
+# HELP jenkins_node_count_history Generated from Dropwizard metric import (metric=jenkins.node.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_node_count_history summary
+jenkins_node_count_history{quantile="0.5",} 3.0
+jenkins_node_count_history{quantile="0.75",} 3.0
+jenkins_node_count_history{quantile="0.95",} 3.0
+jenkins_node_count_history{quantile="0.98",} 3.0
+jenkins_node_count_history{quantile="0.99",} 3.0
+jenkins_node_count_history{quantile="0.999",} 3.0
+jenkins_node_count_history_count 35.0
+# HELP vm_memory_non_heap_committed_history Generated from Dropwizard metric import (metric=vm.memory.non-heap.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_committed_history summary
+vm_memory_non_heap_committed_history{quantile="0.5",} 1.83631872E8
+vm_memory_non_heap_committed_history{quantile="0.75",} 1.83631872E8
+vm_memory_non_heap_committed_history{quantile="0.95",} 1.83631872E8
+vm_memory_non_heap_committed_history{quantile="0.98",} 1.83631872E8
+vm_memory_non_heap_committed_history{quantile="0.99",} 1.83631872E8
+vm_memory_non_heap_committed_history{quantile="0.999",} 1.83631872E8
+vm_memory_non_heap_committed_history_count 35.0
+# HELP http_responseCodes_serverError_total Generated from Dropwizard metric import (metric=http.responseCodes.serverError, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_serverError_total counter
+http_responseCodes_serverError_total 0.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history summary
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.5",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.75",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.95",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.98",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.99",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history{quantile="0.999",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_history_count 35.0
+# HELP vm_memory_total_used Generated from Dropwizard metric import (metric=vm.memory.total.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$530/0x00000001009f4800)
+# TYPE vm_memory_total_used gauge
+vm_memory_total_used 4.1656192E8
+# HELP vm_blocked_count Generated from Dropwizard metric import (metric=vm.blocked.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_blocked_count gauge
+vm_blocked_count 0.0
+# HELP vm_daemon_count Generated from Dropwizard metric import (metric=vm.daemon.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$551/0x0000000100a4e8f8)
+# TYPE vm_daemon_count gauge
+vm_daemon_count 29.0
+# HELP vm_memory_non_heap_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.non-heap.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_committed_window_15m summary
+vm_memory_non_heap_committed_window_15m{quantile="0.5",} 1.818624E8
+vm_memory_non_heap_committed_window_15m{quantile="0.75",} 1.83369728E8
+vm_memory_non_heap_committed_window_15m{quantile="0.95",} 1.83631872E8
+vm_memory_non_heap_committed_window_15m{quantile="0.98",} 1.83631872E8
+vm_memory_non_heap_committed_window_15m{quantile="0.99",} 1.83631872E8
+vm_memory_non_heap_committed_window_15m{quantile="0.999",} 1.83631872E8
+vm_memory_non_heap_committed_window_15m_count 35.0
+# HELP http_responseCodes_ok_total Generated from Dropwizard metric import (metric=http.responseCodes.ok, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_ok_total counter
+http_responseCodes_ok_total 326.0
+# HELP jenkins_project_enabled_count_history Generated from Dropwizard metric import (metric=jenkins.project.enabled.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_project_enabled_count_history summary
+jenkins_project_enabled_count_history{quantile="0.5",} 6.0
+jenkins_project_enabled_count_history{quantile="0.75",} 6.0
+jenkins_project_enabled_count_history{quantile="0.95",} 6.0
+jenkins_project_enabled_count_history{quantile="0.98",} 6.0
+jenkins_project_enabled_count_history{quantile="0.99",} 6.0
+jenkins_project_enabled_count_history{quantile="0.999",} 6.0
+jenkins_project_enabled_count_history_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_used_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_used_history summary
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.5",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.75",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.95",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.98",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.99",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history{quantile="0.999",} 1.3996288E8
+vm_memory_pools_G1_Old_Gen_used_history_count 35.0
+# HELP jenkins_queue_size_history Generated from Dropwizard metric import (metric=jenkins.queue.size.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_queue_size_history summary
+jenkins_queue_size_history{quantile="0.5",} 0.0
+jenkins_queue_size_history{quantile="0.75",} 0.0
+jenkins_queue_size_history{quantile="0.95",} 0.0
+jenkins_queue_size_history{quantile="0.98",} 0.0
+jenkins_queue_size_history{quantile="0.99",} 0.0
+jenkins_queue_size_history{quantile="0.999",} 0.0
+jenkins_queue_size_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h summary
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.5",} 3.167104E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.75",} 3.207616E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.95",} 3.26264064E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.98",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.99",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h{quantile="0.999",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_1h_count 35.0
+# HELP http_responseCodes_created_total Generated from Dropwizard metric import (metric=http.responseCodes.created, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_created_total counter
+http_responseCodes_created_total 2.0
+# HELP vm_memory_pools_G1_Old_Gen_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_usage_x100_window_1h summary
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.5",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.75",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.95",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.98",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.99",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h{quantile="0.999",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_committed_window_5m summary
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.75",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.95",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.98",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.99",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m{quantile="0.999",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.5",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.75",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.95",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.98",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.99",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history{quantile="0.999",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_history_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m summary
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.5",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.75",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.95",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.98",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.99",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m{quantile="0.999",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_5m_count 35.0
+# HELP http_responseCodes_other_total Generated from Dropwizard metric import (metric=http.responseCodes.other, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_other_total counter
+http_responseCodes_other_total 0.0
+# HELP vm_memory_non_heap_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.non-heap.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_usage_x100_history summary
+vm_memory_non_heap_usage_x100_history{quantile="0.5",} 97.0
+vm_memory_non_heap_usage_x100_history{quantile="0.75",} 97.0
+vm_memory_non_heap_usage_x100_history{quantile="0.95",} 97.0
+vm_memory_non_heap_usage_x100_history{quantile="0.98",} 97.0
+vm_memory_non_heap_usage_x100_history{quantile="0.99",} 97.0
+vm_memory_non_heap_usage_x100_history{quantile="0.999",} 97.0
+vm_memory_non_heap_usage_x100_history_count 35.0
+# HELP http_responseCodes_serviceUnavailable_total Generated from Dropwizard metric import (metric=http.responseCodes.serviceUnavailable, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_serviceUnavailable_total counter
+http_responseCodes_serviceUnavailable_total 1.0
+# HELP jenkins_runs_not_built_total Generated from Dropwizard metric import (metric=jenkins.runs.not_built, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_not_built_total counter
+jenkins_runs_not_built_total 0.0
+# HELP vm_memory_pools_Metaspace_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_used_window_15m summary
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.5",} 1.16438512E8
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.75",} 1.16696656E8
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.95",} 1.168136496E8
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.98",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.99",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_15m{quantile="0.999",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_15m_count 35.0
+# HELP jenkins_job_building_duration Generated from Dropwizard metric import (metric=jenkins.job.building.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_building_duration summary
+jenkins_job_building_duration{quantile="0.5",} 87.64887655400001
+jenkins_job_building_duration{quantile="0.75",} 87.64887655400001
+jenkins_job_building_duration{quantile="0.95",} 95.52522233500001
+jenkins_job_building_duration{quantile="0.98",} 95.52522233500001
+jenkins_job_building_duration{quantile="0.99",} 95.52522233500001
+jenkins_job_building_duration{quantile="0.999",} 95.52522233500001
+jenkins_job_building_duration_count 2.0
+# HELP jenkins_queue_stuck_value Generated from Dropwizard metric import (metric=jenkins.queue.stuck.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$7)
+# TYPE jenkins_queue_stuck_value gauge
+jenkins_queue_stuck_value 0.0
+# HELP jenkins_node_online_history Generated from Dropwizard metric import (metric=jenkins.node.online.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_node_online_history summary
+jenkins_node_online_history{quantile="0.5",} 3.0
+jenkins_node_online_history{quantile="0.75",} 3.0
+jenkins_node_online_history{quantile="0.95",} 3.0
+jenkins_node_online_history{quantile="0.98",} 3.0
+jenkins_node_online_history{quantile="0.99",} 3.0
+jenkins_node_online_history{quantile="0.999",} 3.0
+jenkins_node_online_history_count 35.0
+# HELP vm_memory_heap_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.heap.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_usage_x100_window_5m summary
+vm_memory_heap_usage_x100_window_5m{quantile="0.5",} 12.0
+vm_memory_heap_usage_x100_window_5m{quantile="0.75",} 13.5
+vm_memory_heap_usage_x100_window_5m{quantile="0.95",} 21.9
+vm_memory_heap_usage_x100_window_5m{quantile="0.98",} 22.0
+vm_memory_heap_usage_x100_window_5m{quantile="0.99",} 22.0
+vm_memory_heap_usage_x100_window_5m{quantile="0.999",} 22.0
+vm_memory_heap_usage_x100_window_5m_count 35.0
+# HELP vm_memory_total_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.total.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_committed_window_1h summary
+vm_memory_total_committed_window_1h{quantile="0.5",} 7.22927616E8
+vm_memory_total_committed_window_1h{quantile="0.75",} 7.24434944E8
+vm_memory_total_committed_window_1h{quantile="0.95",} 7.24697088E8
+vm_memory_total_committed_window_1h{quantile="0.98",} 7.24697088E8
+vm_memory_total_committed_window_1h{quantile="0.99",} 7.24697088E8
+vm_memory_total_committed_window_1h{quantile="0.999",} 7.24697088E8
+vm_memory_total_committed_window_1h_count 35.0
+# HELP vm_memory_total_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.total.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_used_window_15m summary
+vm_memory_total_used_window_15m{quantile="0.5",} 4.11952952E8
+vm_memory_total_used_window_15m{quantile="0.75",} 4.86317728E8
+vm_memory_total_used_window_15m{quantile="0.95",} 6.039397215999999E8
+vm_memory_total_used_window_15m{quantile="0.98",} 6.20626448E8
+vm_memory_total_used_window_15m{quantile="0.99",} 6.20626448E8
+vm_memory_total_used_window_15m{quantile="0.999",} 6.20626448E8
+vm_memory_total_used_window_15m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_committed_window_1h summary
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.5",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.75",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.95",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.98",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.99",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h{quantile="0.999",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_1h_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__init Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__init gauge
+vm_memory_pools_CodeHeap__non_profiled_nmethods__init 2555904.0
+# HELP vm_memory_total_committed_history Generated from Dropwizard metric import (metric=vm.memory.total.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_committed_history summary
+vm_memory_total_committed_history{quantile="0.5",} 7.24697088E8
+vm_memory_total_committed_history{quantile="0.75",} 7.24697088E8
+vm_memory_total_committed_history{quantile="0.95",} 7.24697088E8
+vm_memory_total_committed_history{quantile="0.98",} 7.24697088E8
+vm_memory_total_committed_history{quantile="0.99",} 7.24697088E8
+vm_memory_total_committed_history{quantile="0.999",} 7.24697088E8
+vm_memory_total_committed_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__usage Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__usage gauge
+vm_memory_pools_CodeHeap__profiled_nmethods__usage 0.261886809744393
+# HELP vm_memory_non_heap_init Generated from Dropwizard metric import (metric=vm.memory.non-heap.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$537/0x00000001009f8d18)
+# TYPE vm_memory_non_heap_init gauge
+vm_memory_non_heap_init 7667712.0
+# HELP http_requests Generated from Dropwizard metric import (metric=http.requests, type=com.codahale.metrics.Timer)
+# TYPE http_requests summary
+http_requests{quantile="0.5",} 0.002149823
+http_requests{quantile="0.75",} 0.0028158420000000003
+http_requests{quantile="0.95",} 0.008693329000000001
+http_requests{quantile="0.98",} 0.008693329000000001
+http_requests{quantile="0.99",} 0.008704167
+http_requests{quantile="0.999",} 0.009542941000000001
+http_requests_count 338.0
+# HELP jenkins_queue_pending_history Generated from Dropwizard metric import (metric=jenkins.queue.pending.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_queue_pending_history summary
+jenkins_queue_pending_history{quantile="0.5",} 0.0
+jenkins_queue_pending_history{quantile="0.75",} 0.0
+jenkins_queue_pending_history{quantile="0.95",} 0.0
+jenkins_queue_pending_history{quantile="0.98",} 0.0
+jenkins_queue_pending_history{quantile="0.99",} 0.0
+jenkins_queue_pending_history{quantile="0.999",} 0.0
+jenkins_queue_pending_history_count 35.0
+# HELP vm_cpu_load_x100_window_1h Generated from Dropwizard metric import (metric=vm.cpu.load.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_cpu_load_x100_window_1h summary
+vm_cpu_load_x100_window_1h{quantile="0.5",} 3.0
+vm_cpu_load_x100_window_1h{quantile="0.75",} 5.0
+vm_cpu_load_x100_window_1h{quantile="0.95",} 87.79999999999964
+vm_cpu_load_x100_window_1h{quantile="0.98",} 155.0
+vm_cpu_load_x100_window_1h{quantile="0.99",} 155.0
+vm_cpu_load_x100_window_1h{quantile="0.999",} 155.0
+vm_cpu_load_x100_window_1h_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_used_window_5m summary
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.5",} 1.4648576E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.75",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.95",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.98",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.99",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m{quantile="0.999",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m summary
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.5",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.75",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.95",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.98",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.99",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m{quantile="0.999",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_committed_window_5m summary
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.5",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.75",} 2.17317376E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.95",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.98",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.99",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m{quantile="0.999",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_5m_count 35.0
+# HELP vm_gc_G1_Old_Generation_count Generated from Dropwizard metric import (metric=vm.gc.G1-Old-Generation.count, type=com.codahale.metrics.jvm.GarbageCollectorMetricSet$$Lambda$547/0x0000000100a4e058)
+# TYPE vm_gc_G1_Old_Generation_count gauge
+vm_gc_G1_Old_Generation_count 0.0
+# HELP vm_memory_pools_G1_Eden_Space_init Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_G1_Eden_Space_init gauge
+vm_memory_pools_G1_Eden_Space_init 2.62144E7
+# HELP vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history summary
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.5",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.75",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.95",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.98",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.99",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history{quantile="0.999",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_history_count 35.0
+# HELP jenkins_task_queuing_duration Generated from Dropwizard metric import (metric=jenkins.task.queuing.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_task_queuing_duration summary
+jenkins_task_queuing_duration{quantile="0.5",} 0.003
+jenkins_task_queuing_duration{quantile="0.75",} 0.003
+jenkins_task_queuing_duration{quantile="0.95",} 0.009000000000000001
+jenkins_task_queuing_duration{quantile="0.98",} 0.02
+jenkins_task_queuing_duration{quantile="0.99",} 0.02
+jenkins_task_queuing_duration{quantile="0.999",} 0.02
+jenkins_task_queuing_duration_count 4.0
+# HELP vm_memory_non_heap_max Generated from Dropwizard metric import (metric=vm.memory.non-heap.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$539/0x00000001009f9168)
+# TYPE vm_memory_non_heap_max gauge
+vm_memory_non_heap_max -1.0
+# HELP vm_memory_pools_G1_Eden_Space_max Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_G1_Eden_Space_max gauge
+vm_memory_pools_G1_Eden_Space_max -1.0
+# HELP vm_memory_pools_G1_Eden_Space_used Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_G1_Eden_Space_used gauge
+vm_memory_pools_G1_Eden_Space_used 7.340032E7
+# HELP vm_memory_pools_G1_Survivor_Space_used_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_used_history summary
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.75",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.95",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.98",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.99",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_history{quantile="0.999",} 2.5690112E7
+vm_memory_pools_G1_Survivor_Space_used_history_count 35.0
+# HELP jenkins_queue_buildable_history Generated from Dropwizard metric import (metric=jenkins.queue.buildable.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_queue_buildable_history summary
+jenkins_queue_buildable_history{quantile="0.5",} 0.0
+jenkins_queue_buildable_history{quantile="0.75",} 0.0
+jenkins_queue_buildable_history{quantile="0.95",} 0.0
+jenkins_queue_buildable_history{quantile="0.98",} 0.0
+jenkins_queue_buildable_history{quantile="0.99",} 0.0
+jenkins_queue_buildable_history{quantile="0.999",} 0.0
+jenkins_queue_buildable_history_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_committed_history summary
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.5",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.75",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.95",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.98",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.99",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_history{quantile="0.999",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_history_count 35.0
+# HELP vm_memory_pools_Metaspace_init Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_Metaspace_init gauge
+vm_memory_pools_Metaspace_init 0.0
+# HELP vm_memory_non_heap_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.non-heap.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_committed_window_5m summary
+vm_memory_non_heap_committed_window_5m{quantile="0.5",} 1.8317312E8
+vm_memory_non_heap_committed_window_5m{quantile="0.75",} 1.83566336E8
+vm_memory_non_heap_committed_window_5m{quantile="0.95",} 1.83631872E8
+vm_memory_non_heap_committed_window_5m{quantile="0.98",} 1.83631872E8
+vm_memory_non_heap_committed_window_5m{quantile="0.99",} 1.83631872E8
+vm_memory_non_heap_committed_window_5m{quantile="0.999",} 1.83631872E8
+vm_memory_non_heap_committed_window_5m_count 35.0
+# HELP vm_memory_non_heap_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.non-heap.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_usage_x100_window_1h summary
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.5",} 97.0
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.75",} 97.0
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.95",} 98.0
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.98",} 98.0
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.99",} 98.0
+vm_memory_non_heap_usage_x100_window_1h{quantile="0.999",} 98.0
+vm_memory_non_heap_usage_x100_window_1h_count 35.0
+# HELP jenkins_job_blocked_duration Generated from Dropwizard metric import (metric=jenkins.job.blocked.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_blocked_duration summary
+jenkins_job_blocked_duration{quantile="0.5",} 0.0
+jenkins_job_blocked_duration{quantile="0.75",} 0.0
+jenkins_job_blocked_duration{quantile="0.95",} 0.0
+jenkins_job_blocked_duration{quantile="0.98",} 0.0
+jenkins_job_blocked_duration{quantile="0.99",} 0.0
+jenkins_job_blocked_duration{quantile="0.999",} 0.0
+jenkins_job_blocked_duration_count 2.0
+# HELP vm_memory_pools_Metaspace_committed Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_Metaspace_committed gauge
+vm_memory_pools_Metaspace_committed 1.19865344E8
+# HELP vm_memory_heap_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.heap.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_used_window_15m summary
+vm_memory_heap_used_window_15m{quantile="0.5",} 2.35383296E8
+vm_memory_heap_used_window_15m{quantile="0.75",} 3.16967936E8
+vm_memory_heap_used_window_15m{quantile="0.95",} 4.310938623999999E8
+vm_memory_heap_used_window_15m{quantile="0.98",} 4.43001344E8
+vm_memory_heap_used_window_15m{quantile="0.99",} 4.43001344E8
+vm_memory_heap_used_window_15m{quantile="0.999",} 4.43001344E8
+vm_memory_heap_used_window_15m_count 35.0
+# HELP vm_memory_pools_Metaspace_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_usage_x100_window_15m summary
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.5",} 97.0
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.75",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.95",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.98",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.99",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_15m{quantile="0.999",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.5",} 1.1862016E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.75",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.95",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.98",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.99",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h{quantile="0.999",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_usage_x100_window_1h summary
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.5",} 24.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.75",} 54.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.95",} 90.6
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.98",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.99",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h{quantile="0.999",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_init Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_G1_Survivor_Space_init gauge
+vm_memory_pools_G1_Survivor_Space_init 0.0
+# HELP vm_memory_pools_Compressed_Class_Space_committed Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_Compressed_Class_Space_committed gauge
+vm_memory_pools_Compressed_Class_Space_committed 1.6121856E7
+# HELP vm_memory_pools_G1_Old_Gen_max Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_G1_Old_Gen_max gauge
+vm_memory_pools_G1_Old_Gen_max 2.025848832E9
+# HELP vm_memory_heap_max Generated from Dropwizard metric import (metric=vm.memory.heap.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$535/0x00000001009f8450)
+# TYPE vm_memory_heap_max gauge
+vm_memory_heap_max 2.025848832E9
+# HELP http_responseCodes_noContent_total Generated from Dropwizard metric import (metric=http.responseCodes.noContent, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_noContent_total counter
+http_responseCodes_noContent_total 0.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.5",} 3.1719424E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.75",} 3.2702464E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.95",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.98",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.99",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m{quantile="0.999",} 3.2833536E7
+vm_memory_pools_CodeHeap__profiled_nmethods__committed_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.5",} 1.1862016E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.75",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.95",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.98",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.99",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m{quantile="0.999",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_15m_count 35.0
+# HELP vm_class_loaded Generated from Dropwizard metric import (metric=vm.class.loaded, type=com.codahale.metrics.jvm.ClassLoadingGaugeSet$$Lambda$556/0x0000000100a4f3c0)
+# TYPE vm_class_loaded gauge
+vm_class_loaded 20919.0
+# HELP jenkins_plugins_withUpdate Generated from Dropwizard metric import (metric=jenkins.plugins.withUpdate, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$23)
+# TYPE jenkins_plugins_withUpdate gauge
+jenkins_plugins_withUpdate 0.0
+# HELP jenkins_runs_total_total Generated from Dropwizard metric import (metric=jenkins.runs.total, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_total_total counter
+jenkins_runs_total_total 2.0
+# HELP vm_memory_pools_G1_Eden_Space_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_used_window_5m summary
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.5",} 6.9730304E7
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.75",} 1.06954752E8
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.95",} 2.809135104E8
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.98",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.99",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_5m{quantile="0.999",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_5m_count 35.0
+# HELP vm_memory_heap_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.heap.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_committed_window_1h summary
+vm_memory_heap_committed_window_1h{quantile="0.5",} 5.41065216E8
+vm_memory_heap_committed_window_1h{quantile="0.75",} 5.41065216E8
+vm_memory_heap_committed_window_1h{quantile="0.95",} 5.41065216E8
+vm_memory_heap_committed_window_1h{quantile="0.98",} 5.41065216E8
+vm_memory_heap_committed_window_1h{quantile="0.99",} 5.41065216E8
+vm_memory_heap_committed_window_1h{quantile="0.999",} 5.41065216E8
+vm_memory_heap_committed_window_1h_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.5",} 3.204032E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.75",} 3.2473152E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.95",} 3.26858304E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.98",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.99",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m{quantile="0.999",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_5m_count 35.0
+# HELP vm_memory_pools_Metaspace_used_history Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_used_history summary
+vm_memory_pools_Metaspace_used_history{quantile="0.5",} 1.16799488E8
+vm_memory_pools_Metaspace_used_history{quantile="0.75",} 1.16811424E8
+vm_memory_pools_Metaspace_used_history{quantile="0.95",} 1.16822552E8
+vm_memory_pools_Metaspace_used_history{quantile="0.98",} 1.16822552E8
+vm_memory_pools_Metaspace_used_history{quantile="0.99",} 1.16822552E8
+vm_memory_pools_Metaspace_used_history{quantile="0.999",} 1.16822552E8
+vm_memory_pools_Metaspace_used_history_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_usage Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_G1_Old_Gen_usage gauge
+vm_memory_pools_G1_Old_Gen_usage 0.06908851133863872
+# HELP vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m summary
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.5",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.75",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.95",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.98",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.99",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m{quantile="0.999",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_5m_count 35.0
+# HELP jenkins_plugins_active Generated from Dropwizard metric import (metric=jenkins.plugins.active, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$20)
+# TYPE jenkins_plugins_active gauge
+jenkins_plugins_active 109.0
+# HELP vm_file_descriptor_ratio_x100_window_5m Generated from Dropwizard metric import (metric=vm.file.descriptor.ratio.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_file_descriptor_ratio_x100_window_5m summary
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.5",} 0.0
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.75",} 0.0
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.95",} 0.0
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.98",} 0.0
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.99",} 0.0
+vm_file_descriptor_ratio_x100_window_5m{quantile="0.999",} 0.0
+vm_file_descriptor_ratio_x100_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_usage_x100_window_5m summary
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.5",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.75",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.95",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.98",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.99",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m{quantile="0.999",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_committed_window_1h summary
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.75",} 2.62144E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.95",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.98",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.99",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h{quantile="0.999",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_1h_count 35.0
+# HELP vm_gc_G1_Old_Generation_time Generated from Dropwizard metric import (metric=vm.gc.G1-Old-Generation.time, type=com.codahale.metrics.jvm.GarbageCollectorMetricSet$$Lambda$548/0x0000000100a4e280)
+# TYPE vm_gc_G1_Old_Generation_time gauge
+vm_gc_G1_Old_Generation_time 0.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m summary
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.5",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.75",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.95",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.98",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.99",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m{quantile="0.999",} 43.0
+vm_memory_pools_CodeHeap__non_nmethods__usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_init Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_Compressed_Class_Space_init gauge
+vm_memory_pools_Compressed_Class_Space_init 0.0
+# HELP vm_memory_pools_G1_Survivor_Space_committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_committed_history summary
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.75",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.95",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.98",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.99",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_history{quantile="0.999",} 2.62144E7
+vm_memory_pools_G1_Survivor_Space_committed_history_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_usage Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_G1_Eden_Space_usage gauge
+vm_memory_pools_G1_Eden_Space_usage 0.24390243902439024
+# HELP vm_memory_pools_G1_Survivor_Space_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_used_window_15m summary
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.75",} 2.5690112E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.95",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.98",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.99",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m{quantile="0.999",} 3.6975744E7
+vm_memory_pools_G1_Survivor_Space_used_window_15m_count 35.0
+# HELP vm_runnable_count Generated from Dropwizard metric import (metric=vm.runnable.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_runnable_count gauge
+vm_runnable_count 13.0
+# HELP jenkins_job_buildable_duration Generated from Dropwizard metric import (metric=jenkins.job.buildable.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_buildable_duration summary
+jenkins_job_buildable_duration{quantile="0.5",} 0.001
+jenkins_job_buildable_duration{quantile="0.75",} 0.001
+jenkins_job_buildable_duration{quantile="0.95",} 0.007
+jenkins_job_buildable_duration{quantile="0.98",} 0.007
+jenkins_job_buildable_duration{quantile="0.99",} 0.007
+jenkins_job_buildable_duration{quantile="0.999",} 0.007
+jenkins_job_buildable_duration_count 2.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__used_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__used_history summary
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.5",} 3.205056E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.75",} 3.2155136E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.95",} 3.261056E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.98",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.99",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history{quantile="0.999",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_history_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m summary
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.5",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.75",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.95",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.98",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.99",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m{quantile="0.999",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_5m_count 35.0
+# HELP jenkins_queue_stuck_history Generated from Dropwizard metric import (metric=jenkins.queue.stuck.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_queue_stuck_history summary
+jenkins_queue_stuck_history{quantile="0.5",} 0.0
+jenkins_queue_stuck_history{quantile="0.75",} 0.0
+jenkins_queue_stuck_history{quantile="0.95",} 0.0
+jenkins_queue_stuck_history{quantile="0.98",} 0.0
+jenkins_queue_stuck_history{quantile="0.99",} 0.0
+jenkins_queue_stuck_history{quantile="0.999",} 0.0
+jenkins_queue_stuck_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.5",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.75",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.95",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.98",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.99",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m{quantile="0.999",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_usage_x100_window_15m summary
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.5",} 24.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.75",} 54.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.95",} 90.6
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.98",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.99",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m{quantile="0.999",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_committed_window_5m summary
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.5",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.75",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.95",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.98",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.99",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m{quantile="0.999",} 1.6121856E7
+vm_memory_pools_Compressed_Class_Space_committed_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_usage_x100_history summary
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.5",} 24.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.75",} 24.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.95",} 24.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.98",} 56.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.99",} 79.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history{quantile="0.999",} 93.0
+vm_memory_pools_G1_Eden_Space_usage_x100_history_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_usage_x100_window_15m summary
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.5",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.75",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.95",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.98",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.99",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m{quantile="0.999",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_window_15m_count 35.0
+# HELP jenkins_job_queuing_duration Generated from Dropwizard metric import (metric=jenkins.job.queuing.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_queuing_duration summary
+jenkins_job_queuing_duration{quantile="0.5",} 0.005
+jenkins_job_queuing_duration{quantile="0.75",} 0.005
+jenkins_job_queuing_duration{quantile="0.95",} 0.029
+jenkins_job_queuing_duration{quantile="0.98",} 0.029
+jenkins_job_queuing_duration{quantile="0.99",} 0.029
+jenkins_job_queuing_duration{quantile="0.999",} 0.029
+jenkins_job_queuing_duration_count 2.0
+# HELP system_cpu_load_x100_window_5m Generated from Dropwizard metric import (metric=system.cpu.load.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE system_cpu_load_x100_window_5m summary
+system_cpu_load_x100_window_5m{quantile="0.5",} 116.5
+system_cpu_load_x100_window_5m{quantile="0.75",} 134.0
+system_cpu_load_x100_window_5m{quantile="0.95",} 185.9
+system_cpu_load_x100_window_5m{quantile="0.98",} 186.0
+system_cpu_load_x100_window_5m{quantile="0.99",} 186.0
+system_cpu_load_x100_window_5m{quantile="0.999",} 186.0
+system_cpu_load_x100_window_5m_count 35.0
+# HELP jenkins_project_enabled_count_value Generated from Dropwizard metric import (metric=jenkins.project.enabled.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$18)
+# TYPE jenkins_project_enabled_count_value gauge
+jenkins_project_enabled_count_value 6.0
+# HELP vm_memory_total_committed Generated from Dropwizard metric import (metric=vm.memory.total.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$532/0x00000001009f4c50)
+# TYPE vm_memory_total_committed gauge
+vm_memory_total_committed 7.24697088E8
+# HELP vm_memory_total_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.total.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_committed_window_15m summary
+vm_memory_total_committed_window_15m{quantile="0.5",} 7.22927616E8
+vm_memory_total_committed_window_15m{quantile="0.75",} 7.24434944E8
+vm_memory_total_committed_window_15m{quantile="0.95",} 7.24697088E8
+vm_memory_total_committed_window_15m{quantile="0.98",} 7.24697088E8
+vm_memory_total_committed_window_15m{quantile="0.99",} 7.24697088E8
+vm_memory_total_committed_window_15m{quantile="0.999",} 7.24697088E8
+vm_memory_total_committed_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_used_after_gc Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used-after-gc, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$545/0x00000001009fa2d8)
+# TYPE vm_memory_pools_G1_Eden_Space_used_after_gc gauge
+vm_memory_pools_G1_Eden_Space_used_after_gc 0.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__max Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__max gauge
+vm_memory_pools_CodeHeap__non_nmethods__max 5840896.0
+# HELP vm_memory_heap_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.heap.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_used_window_5m summary
+vm_memory_heap_used_window_5m{quantile="0.5",} 2.34859008E8
+vm_memory_heap_used_window_5m{quantile="0.75",} 2.67364864E8
+vm_memory_heap_used_window_5m{quantile="0.95",} 4.407993344E8
+vm_memory_heap_used_window_5m{quantile="0.98",} 4.43001344E8
+vm_memory_heap_used_window_5m{quantile="0.99",} 4.43001344E8
+vm_memory_heap_used_window_5m{quantile="0.999",} 4.43001344E8
+vm_memory_heap_used_window_5m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_used_history Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_used_history summary
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.5",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.75",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.95",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.98",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.99",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history{quantile="0.999",} 1.4651352E7
+vm_memory_pools_Compressed_Class_Space_used_history_count 35.0
+# HELP vm_memory_pools_Metaspace_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_committed_window_15m summary
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.5",} 1.19472128E8
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.75",} 1.19734272E8
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.95",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.98",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.99",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_15m{quantile="0.999",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_15m_count 35.0
+# HELP jenkins_job_averageDepth Generated from Dropwizard metric import (metric=jenkins.job.averageDepth, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$16)
+# TYPE jenkins_job_averageDepth gauge
+jenkins_job_averageDepth 1.0
+# HELP vm_peak_count Generated from Dropwizard metric import (metric=vm.peak.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$552/0x0000000100a4eb20)
+# TYPE vm_peak_count gauge
+vm_peak_count 87.0
+# HELP vm_waiting_count Generated from Dropwizard metric import (metric=vm.waiting.count, type=com.codahale.metrics.jvm.ThreadStatesGaugeSet$$Lambda$549/0x0000000100a4e4a8)
+# TYPE vm_waiting_count gauge
+vm_waiting_count 14.0
+# HELP vm_uptime_milliseconds Generated from Dropwizard metric import (metric=vm.uptime.milliseconds, type=jenkins.metrics.impl.VMMetricProviderImpl$2)
+# TYPE vm_uptime_milliseconds gauge
+vm_uptime_milliseconds 540193.0
+# HELP vm_cpu_load_x100_window_5m Generated from Dropwizard metric import (metric=vm.cpu.load.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_cpu_load_x100_window_5m summary
+vm_cpu_load_x100_window_5m{quantile="0.5",} 1.0
+vm_cpu_load_x100_window_5m{quantile="0.75",} 3.0
+vm_cpu_load_x100_window_5m{quantile="0.95",} 13.549999999999994
+vm_cpu_load_x100_window_5m{quantile="0.98",} 14.0
+vm_cpu_load_x100_window_5m{quantile="0.99",} 14.0
+vm_cpu_load_x100_window_5m{quantile="0.999",} 14.0
+vm_cpu_load_x100_window_5m_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m summary
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.5",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.75",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.95",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.98",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.99",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m{quantile="0.999",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_committed_window_5m summary
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.5",} 3.00941312E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.75",} 3.02514176E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.95",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.98",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.99",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m{quantile="0.999",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_committed_window_1h summary
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.5",} 2.1495808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.75",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.95",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.98",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.99",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h{quantile="0.999",} 2.18103808E8
+vm_memory_pools_G1_Old_Gen_committed_window_1h_count 35.0
+# HELP jenkins_runs_failure_total Generated from Dropwizard metric import (metric=jenkins.runs.failure, type=com.codahale.metrics.Meter)
+# TYPE jenkins_runs_failure_total counter
+jenkins_runs_failure_total 0.0
+# HELP vm_memory_total_init Generated from Dropwizard metric import (metric=vm.memory.total.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$529/0x00000001009f5d58)
+# TYPE vm_memory_total_init gauge
+vm_memory_total_init 1.35593984E8
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__used Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__used gauge
+vm_memory_pools_CodeHeap__profiled_nmethods__used 3.218816E7
+# HELP vm_memory_pools_CodeHeap__non_nmethods__used Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__used gauge
+vm_memory_pools_CodeHeap__non_nmethods__used 2515968.0
+# HELP vm_gc_G1_Young_Generation_time Generated from Dropwizard metric import (metric=vm.gc.G1-Young-Generation.time, type=com.codahale.metrics.jvm.GarbageCollectorMetricSet$$Lambda$548/0x0000000100a4e280)
+# TYPE vm_gc_G1_Young_Generation_time gauge
+vm_gc_G1_Young_Generation_time 281.0
+# HELP vm_memory_non_heap_usage Generated from Dropwizard metric import (metric=vm.memory.non-heap.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$2)
+# TYPE vm_memory_non_heap_usage gauge
+vm_memory_non_heap_usage 0.9695036818009457
+# HELP vm_memory_pools_Metaspace_max Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_Metaspace_max gauge
+vm_memory_pools_Metaspace_max -1.0
+# HELP jenkins_task_buildable_duration Generated from Dropwizard metric import (metric=jenkins.task.buildable.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_task_buildable_duration summary
+jenkins_task_buildable_duration{quantile="0.5",} 0.0018710040000000001
+jenkins_task_buildable_duration{quantile="0.75",} 0.0018710040000000001
+jenkins_task_buildable_duration{quantile="0.95",} 0.007312987000000001
+jenkins_task_buildable_duration{quantile="0.98",} 0.007312987000000001
+jenkins_task_buildable_duration{quantile="0.99",} 0.007312987000000001
+jenkins_task_buildable_duration{quantile="0.999",} 0.007312987000000001
+jenkins_task_buildable_duration_count 2.0
+# HELP jenkins_node_offline_value Generated from Dropwizard metric import (metric=jenkins.node.offline.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$11)
+# TYPE jenkins_node_offline_value gauge
+jenkins_node_offline_value 0.0
+# HELP vm_memory_pools_G1_Eden_Space_committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_committed_history summary
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.5",} 3.00941312E8
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.75",} 3.00941312E8
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.95",} 3.00941312E8
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.98",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.99",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_history{quantile="0.999",} 3.10378496E8
+vm_memory_pools_G1_Eden_Space_committed_history_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m summary
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.5",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.75",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.95",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.98",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.99",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m{quantile="0.999",} 100.0
+vm_memory_pools_G1_Survivor_Space_usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_Metaspace_used_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.used.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_used_window_5m summary
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.5",} 1.16685744E8
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.75",} 1.16777586E8
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.95",} 1.168219956E8
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.98",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.99",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_5m{quantile="0.999",} 1.16822552E8
+vm_memory_pools_Metaspace_used_window_5m_count 35.0
+# HELP jenkins_node_builds Generated from Dropwizard metric import (metric=jenkins.node.builds, type=com.codahale.metrics.Timer)
+# TYPE jenkins_node_builds summary
+jenkins_node_builds{node="master",quantile="0.5",} 87.64876853700001
+jenkins_node_builds{node="master",quantile="0.75",} 87.64876853700001
+jenkins_node_builds{node="master",quantile="0.95",} 95.524898303
+jenkins_node_builds{node="master",quantile="0.98",} 95.524898303
+jenkins_node_builds{node="master",quantile="0.99",} 95.524898303
+jenkins_node_builds{node="master",quantile="0.999",} 95.524898303
+jenkins_node_builds_count{node="master",} 2.0
+jenkins_node_builds{node="vm3",quantile="0.5",} 0.0
+jenkins_node_builds{node="vm3",quantile="0.75",} 0.0
+jenkins_node_builds{node="vm3",quantile="0.95",} 0.0
+jenkins_node_builds{node="vm3",quantile="0.98",} 0.0
+jenkins_node_builds{node="vm3",quantile="0.99",} 0.0
+jenkins_node_builds{node="vm3",quantile="0.999",} 0.0
+jenkins_node_builds_count{node="vm3",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.5",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.75",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.95",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.98",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.99",} 0.0
+jenkins_node_builds{node="vm4",quantile="0.999",} 0.0
+jenkins_node_builds_count{node="vm4",} 0.0
+# HELP vm_file_descriptor_ratio_x100_window_15m Generated from Dropwizard metric import (metric=vm.file.descriptor.ratio.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_file_descriptor_ratio_x100_window_15m summary
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.5",} 0.0
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.75",} 0.0
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.95",} 0.0
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.98",} 0.0
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.99",} 0.0
+vm_file_descriptor_ratio_x100_window_15m{quantile="0.999",} 0.0
+vm_file_descriptor_ratio_x100_window_15m_count 35.0
+# HELP vm_memory_non_heap_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.non-heap.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_committed_window_1h summary
+vm_memory_non_heap_committed_window_1h{quantile="0.5",} 1.818624E8
+vm_memory_non_heap_committed_window_1h{quantile="0.75",} 1.83369728E8
+vm_memory_non_heap_committed_window_1h{quantile="0.95",} 1.83631872E8
+vm_memory_non_heap_committed_window_1h{quantile="0.98",} 1.83631872E8
+vm_memory_non_heap_committed_window_1h{quantile="0.99",} 1.83631872E8
+vm_memory_non_heap_committed_window_1h{quantile="0.999",} 1.83631872E8
+vm_memory_non_heap_committed_window_1h_count 35.0
+# HELP vm_memory_non_heap_usage_x100_window_5m Generated from Dropwizard metric import (metric=vm.memory.non-heap.usage.x100.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_usage_x100_window_5m summary
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.5",} 97.0
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.75",} 97.0
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.95",} 97.0
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.98",} 97.0
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.99",} 97.0
+vm_memory_non_heap_usage_x100_window_5m{quantile="0.999",} 97.0
+vm_memory_non_heap_usage_x100_window_5m_count 35.0
+# HELP jenkins_health_check_score Generated from Dropwizard metric import (metric=jenkins.health-check.score, type=jenkins.metrics.api.Metrics$HealthChecker$2)
+# TYPE jenkins_health_check_score gauge
+jenkins_health_check_score 1.0
+# HELP vm_memory_pools_G1_Survivor_Space_committed Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_G1_Survivor_Space_committed gauge
+vm_memory_pools_G1_Survivor_Space_committed 2.5165824E7
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.5",} 1.2091392E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.75",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.95",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.98",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.99",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m{quantile="0.999",} 1.212416E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__committed_window_5m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__used Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__used gauge
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used 1.1845248E7
+# HELP vm_memory_pools_G1_Eden_Space_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_committed_window_15m summary
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.5",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.75",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.95",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.98",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.99",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m{quantile="0.999",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_15m_count 35.0
+# HELP vm_memory_non_heap_used_window_15m Generated from Dropwizard metric import (metric=vm.memory.non-heap.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_used_window_15m summary
+vm_memory_non_heap_used_window_15m{quantile="0.5",} 1.7707168E8
+vm_memory_non_heap_used_window_15m{quantile="0.75",} 1.77891448E8
+vm_memory_non_heap_used_window_15m{quantile="0.95",} 1.785669984E8
+vm_memory_non_heap_used_window_15m{quantile="0.98",} 1.78638416E8
+vm_memory_non_heap_used_window_15m{quantile="0.99",} 1.78638416E8
+vm_memory_non_heap_used_window_15m{quantile="0.999",} 1.78638416E8
+vm_memory_non_heap_used_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__committed_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__committed_history summary
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.5",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.75",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.95",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.98",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.99",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history{quantile="0.999",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_history_count 35.0
+# HELP vm_memory_heap_usage Generated from Dropwizard metric import (metric=vm.memory.heap.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$1)
+# TYPE vm_memory_heap_usage gauge
+vm_memory_heap_usage 0.11774275564505693
+# HELP vm_memory_heap_used_history Generated from Dropwizard metric import (metric=vm.memory.heap.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_used_history summary
+vm_memory_heap_used_history{quantile="0.5",} 2.36431872E8
+vm_memory_heap_used_history{quantile="0.75",} 2.36431872E8
+vm_memory_heap_used_history{quantile="0.95",} 2.37480448E8
+vm_memory_heap_used_history{quantile="0.98",} 3.2870656E8
+vm_memory_heap_used_history{quantile="0.99",} 3.98961152E8
+vm_memory_heap_used_history{quantile="0.999",} 4.43001344E8
+vm_memory_heap_used_history_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_usage Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_Compressed_Class_Space_usage gauge
+vm_memory_pools_Compressed_Class_Space_usage 0.01364513486623764
+# HELP vm_memory_heap_committed_history Generated from Dropwizard metric import (metric=vm.memory.heap.committed.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_committed_history summary
+vm_memory_heap_committed_history{quantile="0.5",} 5.41065216E8
+vm_memory_heap_committed_history{quantile="0.75",} 5.41065216E8
+vm_memory_heap_committed_history{quantile="0.95",} 5.41065216E8
+vm_memory_heap_committed_history{quantile="0.98",} 5.41065216E8
+vm_memory_heap_committed_history{quantile="0.99",} 5.41065216E8
+vm_memory_heap_committed_history{quantile="0.999",} 5.41065216E8
+vm_memory_heap_committed_history_count 35.0
+# HELP jenkins_task_waiting_duration Generated from Dropwizard metric import (metric=jenkins.task.waiting.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_task_waiting_duration summary
+jenkins_task_waiting_duration{quantile="0.5",} 3.41837E-4
+jenkins_task_waiting_duration{quantile="0.75",} 0.001073947
+jenkins_task_waiting_duration{quantile="0.95",} 0.001073947
+jenkins_task_waiting_duration{quantile="0.98",} 0.003895205
+jenkins_task_waiting_duration{quantile="0.99",} 0.003895205
+jenkins_task_waiting_duration{quantile="0.999",} 0.003895205
+jenkins_task_waiting_duration_count 4.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h summary
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.5",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.75",} 26.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.95",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.98",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.99",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h{quantile="0.999",} 27.0
+vm_memory_pools_CodeHeap__profiled_nmethods__usage_x100_window_1h_count 35.0
+# HELP vm_memory_heap_usage_x100_window_15m Generated from Dropwizard metric import (metric=vm.memory.heap.usage.x100.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_usage_x100_window_15m summary
+vm_memory_heap_usage_x100_window_15m{quantile="0.5",} 12.0
+vm_memory_heap_usage_x100_window_15m{quantile="0.75",} 16.0
+vm_memory_heap_usage_x100_window_15m{quantile="0.95",} 21.199999999999996
+vm_memory_heap_usage_x100_window_15m{quantile="0.98",} 22.0
+vm_memory_heap_usage_x100_window_15m{quantile="0.99",} 22.0
+vm_memory_heap_usage_x100_window_15m{quantile="0.999",} 22.0
+vm_memory_heap_usage_x100_window_15m_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.5",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.75",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.95",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.98",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.99",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h{quantile="0.999",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_window_1h_count 35.0
+# HELP jenkins_project_disabled_count_value Generated from Dropwizard metric import (metric=jenkins.project.disabled.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$19)
+# TYPE jenkins_project_disabled_count_value gauge
+jenkins_project_disabled_count_value 0.0
+# HELP vm_memory_non_heap_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.non-heap.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_used_window_1h summary
+vm_memory_non_heap_used_window_1h{quantile="0.5",} 1.7707168E8
+vm_memory_non_heap_used_window_1h{quantile="0.75",} 1.77891448E8
+vm_memory_non_heap_used_window_1h{quantile="0.95",} 1.785669984E8
+vm_memory_non_heap_used_window_1h{quantile="0.98",} 1.78638416E8
+vm_memory_non_heap_used_window_1h{quantile="0.99",} 1.78638416E8
+vm_memory_non_heap_used_window_1h{quantile="0.999",} 1.78638416E8
+vm_memory_non_heap_used_window_1h_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.5",} 1.1836544E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.75",} 1.1840128E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.95",} 1.2084224E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.98",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.99",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history{quantile="0.999",} 1.2087424E7
+vm_memory_pools_CodeHeap__non_profiled_nmethods__used_history_count 35.0
+# HELP jenkins_health_check_inverse_score Generated from Dropwizard metric import (metric=jenkins.health-check.inverse-score, type=jenkins.metrics.api.Metrics$HealthCheckMetricsProvider$1)
+# TYPE jenkins_health_check_inverse_score gauge
+jenkins_health_check_inverse_score 0.0
+# HELP vm_file_descriptor_ratio_x100_history Generated from Dropwizard metric import (metric=vm.file.descriptor.ratio.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_file_descriptor_ratio_x100_history summary
+vm_file_descriptor_ratio_x100_history{quantile="0.5",} 0.0
+vm_file_descriptor_ratio_x100_history{quantile="0.75",} 0.0
+vm_file_descriptor_ratio_x100_history{quantile="0.95",} 0.0
+vm_file_descriptor_ratio_x100_history{quantile="0.98",} 0.0
+vm_file_descriptor_ratio_x100_history{quantile="0.99",} 0.0
+vm_file_descriptor_ratio_x100_history{quantile="0.999",} 0.0
+vm_file_descriptor_ratio_x100_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__committed Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.committed, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$543/0x00000001009f9e88)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__committed gauge
+vm_memory_pools_CodeHeap__profiled_nmethods__committed 3.2833536E7
+# HELP jenkins_node_count_value Generated from Dropwizard metric import (metric=jenkins.node.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$9)
+# TYPE jenkins_node_count_value gauge
+jenkins_node_count_value 3.0
+# HELP vm_memory_pools_G1_Eden_Space_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_used_window_1h summary
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.5",} 7.1303168E7
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.75",} 1.66723584E8
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.95",} 2.78921216E8
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.98",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.99",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_1h{quantile="0.999",} 2.8311552E8
+vm_memory_pools_G1_Eden_Space_used_window_1h_count 35.0
+# HELP vm_memory_heap_committed_window_5m Generated from Dropwizard metric import (metric=vm.memory.heap.committed.window.5m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_committed_window_5m summary
+vm_memory_heap_committed_window_5m{quantile="0.5",} 5.41065216E8
+vm_memory_heap_committed_window_5m{quantile="0.75",} 5.41065216E8
+vm_memory_heap_committed_window_5m{quantile="0.95",} 5.41065216E8
+vm_memory_heap_committed_window_5m{quantile="0.98",} 5.41065216E8
+vm_memory_heap_committed_window_5m{quantile="0.99",} 5.41065216E8
+vm_memory_heap_committed_window_5m{quantile="0.999",} 5.41065216E8
+vm_memory_heap_committed_window_5m_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_usage Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.usage, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$3)
+# TYPE vm_memory_pools_G1_Survivor_Space_usage gauge
+vm_memory_pools_G1_Survivor_Space_usage 1.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h summary
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.5",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.75",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.95",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.98",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.99",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h{quantile="0.999",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_1h_count 35.0
+# HELP vm_file_descriptor_ratio_x100_window_1h Generated from Dropwizard metric import (metric=vm.file.descriptor.ratio.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_file_descriptor_ratio_x100_window_1h summary
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.5",} 0.0
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.75",} 0.0
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.95",} 0.0
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.98",} 0.0
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.99",} 0.0
+vm_file_descriptor_ratio_x100_window_1h{quantile="0.999",} 0.0
+vm_file_descriptor_ratio_x100_window_1h_count 35.0
+# HELP vm_memory_non_heap_used Generated from Dropwizard metric import (metric=vm.memory.non-heap.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$538/0x00000001009f8f40)
+# TYPE vm_memory_non_heap_used gauge
+vm_memory_non_heap_used 1.78031776E8
+# HELP jenkins_project_disabled_count_history Generated from Dropwizard metric import (metric=jenkins.project.disabled.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_project_disabled_count_history summary
+jenkins_project_disabled_count_history{quantile="0.5",} 0.0
+jenkins_project_disabled_count_history{quantile="0.75",} 0.0
+jenkins_project_disabled_count_history{quantile="0.95",} 0.0
+jenkins_project_disabled_count_history{quantile="0.98",} 0.0
+jenkins_project_disabled_count_history{quantile="0.99",} 0.0
+jenkins_project_disabled_count_history{quantile="0.999",} 0.0
+jenkins_project_disabled_count_history_count 35.0
+# HELP jenkins_queue_size_value Generated from Dropwizard metric import (metric=jenkins.queue.size.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$4)
+# TYPE jenkins_queue_size_value gauge
+jenkins_queue_size_value 0.0
+# HELP jenkins_executor_count_history Generated from Dropwizard metric import (metric=jenkins.executor.count.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_executor_count_history summary
+jenkins_executor_count_history{quantile="0.5",} 4.0
+jenkins_executor_count_history{quantile="0.75",} 4.0
+jenkins_executor_count_history{quantile="0.95",} 4.0
+jenkins_executor_count_history{quantile="0.98",} 4.0
+jenkins_executor_count_history{quantile="0.99",} 4.0
+jenkins_executor_count_history{quantile="0.999",} 4.0
+jenkins_executor_count_history_count 35.0
+# HELP jenkins_node_online_value Generated from Dropwizard metric import (metric=jenkins.node.online.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$10)
+# TYPE jenkins_node_online_value gauge
+jenkins_node_online_value 3.0
+# HELP vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-profiled-nmethods'.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history summary
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.5",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.75",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.95",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.98",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.99",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history{quantile="0.999",} 10.0
+vm_memory_pools_CodeHeap__non_profiled_nmethods__usage_x100_history_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h summary
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.5",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.75",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.95",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.98",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.99",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h{quantile="0.999",} 1.0
+vm_memory_pools_Compressed_Class_Space_usage_x100_window_1h_count 35.0
+# HELP jenkins_health_check_count Generated from Dropwizard metric import (metric=jenkins.health-check.count, type=jenkins.metrics.api.Metrics$HealthChecker$1)
+# TYPE jenkins_health_check_count gauge
+jenkins_health_check_count 4.0
+# HELP vm_memory_pools_G1_Survivor_Space_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Survivor_Space_committed_window_15m summary
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.5",} 2.5165824E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.75",} 2.62144E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.95",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.98",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.99",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m{quantile="0.999",} 3.7748736E7
+vm_memory_pools_G1_Survivor_Space_committed_window_15m_count 35.0
+# HELP jenkins_executor_free_value Generated from Dropwizard metric import (metric=jenkins.executor.free.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$14)
+# TYPE jenkins_executor_free_value gauge
+jenkins_executor_free_value 4.0
+# HELP vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'profiled-nmethods'.used.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m summary
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.5",} 3.167104E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.75",} 3.207616E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.95",} 3.26264064E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.98",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.99",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m{quantile="0.999",} 3.2689792E7
+vm_memory_pools_CodeHeap__profiled_nmethods__used_window_15m_count 35.0
+# HELP vm_memory_heap_committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.heap.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_committed_window_15m summary
+vm_memory_heap_committed_window_15m{quantile="0.5",} 5.41065216E8
+vm_memory_heap_committed_window_15m{quantile="0.75",} 5.41065216E8
+vm_memory_heap_committed_window_15m{quantile="0.95",} 5.41065216E8
+vm_memory_heap_committed_window_15m{quantile="0.98",} 5.41065216E8
+vm_memory_heap_committed_window_15m{quantile="0.99",} 5.41065216E8
+vm_memory_heap_committed_window_15m{quantile="0.999",} 5.41065216E8
+vm_memory_heap_committed_window_15m_count 35.0
+# HELP system_cpu_load_x100_window_1h Generated from Dropwizard metric import (metric=system.cpu.load.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE system_cpu_load_x100_window_1h summary
+system_cpu_load_x100_window_1h{quantile="0.5",} 150.0
+system_cpu_load_x100_window_1h{quantile="0.75",} 198.0
+system_cpu_load_x100_window_1h{quantile="0.95",} 273.9999999999999
+system_cpu_load_x100_window_1h{quantile="0.98",} 294.0
+system_cpu_load_x100_window_1h{quantile="0.99",} 294.0
+system_cpu_load_x100_window_1h{quantile="0.999",} 294.0
+system_cpu_load_x100_window_1h_count 35.0
+# HELP jenkins_job_execution_time Generated from Dropwizard metric import (metric=jenkins.job.execution.time, type=com.codahale.metrics.Timer)
+# TYPE jenkins_job_execution_time summary
+jenkins_job_execution_time{quantile="0.5",} 82.674
+jenkins_job_execution_time{quantile="0.75",} 82.674
+jenkins_job_execution_time{quantile="0.95",} 93.0
+jenkins_job_execution_time{quantile="0.98",} 93.0
+jenkins_job_execution_time{quantile="0.99",} 93.0
+jenkins_job_execution_time{quantile="0.999",} 93.0
+jenkins_job_execution_time_count 2.0
+# HELP vm_memory_total_used_history Generated from Dropwizard metric import (metric=vm.memory.total.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_total_used_history summary
+vm_memory_total_used_history{quantile="0.5",} 4.14278648E8
+vm_memory_total_used_history{quantile="0.75",} 4.1432332E8
+vm_memory_total_used_history{quantile="0.95",} 4.15465584E8
+vm_memory_total_used_history{quantile="0.98",} 5.05215304E8
+vm_memory_total_used_history{quantile="0.99",} 5.7624492E8
+vm_memory_total_used_history{quantile="0.999",} 6.20626448E8
+vm_memory_total_used_history_count 35.0
+# HELP jenkins_task_blocked_duration Generated from Dropwizard metric import (metric=jenkins.task.blocked.duration, type=com.codahale.metrics.Timer)
+# TYPE jenkins_task_blocked_duration summary
+jenkins_task_blocked_duration{quantile="0.5",} 0.0
+jenkins_task_blocked_duration{quantile="0.75",} 0.0
+jenkins_task_blocked_duration{quantile="0.95",} 0.0
+jenkins_task_blocked_duration{quantile="0.98",} 0.0
+jenkins_task_blocked_duration{quantile="0.99",} 0.0
+jenkins_task_blocked_duration{quantile="0.999",} 0.0
+jenkins_task_blocked_duration_count 0.0
+# HELP vm_memory_non_heap_used_history Generated from Dropwizard metric import (metric=vm.memory.non-heap.used.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_non_heap_used_history summary
+vm_memory_non_heap_used_history{quantile="0.5",} 1.77844728E8
+vm_memory_non_heap_used_history{quantile="0.75",} 1.77985136E8
+vm_memory_non_heap_used_history{quantile="0.95",} 1.78549144E8
+vm_memory_non_heap_used_history{quantile="0.98",} 1.78638416E8
+vm_memory_non_heap_used_history{quantile="0.99",} 1.78638416E8
+vm_memory_non_heap_used_history{quantile="0.999",} 1.78638416E8
+vm_memory_non_heap_used_history_count 35.0
+# HELP vm_memory_pools_Compressed_Class_Space_used Generated from Dropwizard metric import (metric=vm.memory.pools.Compressed-Class-Space.used, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$542/0x00000001009f9c60)
+# TYPE vm_memory_pools_Compressed_Class_Space_used gauge
+vm_memory_pools_Compressed_Class_Space_used 1.4651352E7
+# HELP vm_memory_pools_Metaspace_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_committed_window_1h summary
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.5",} 1.19472128E8
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.75",} 1.19734272E8
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.95",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.98",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.99",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_1h{quantile="0.999",} 1.19865344E8
+vm_memory_pools_Metaspace_committed_window_1h_count 35.0
+# HELP vm_memory_pools_G1_Survivor_Space_max Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Survivor-Space.max, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$541/0x00000001009f9a38)
+# TYPE vm_memory_pools_G1_Survivor_Space_max gauge
+vm_memory_pools_G1_Survivor_Space_max -1.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__used_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__used_window_1h summary
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.5",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.75",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.95",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.98",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.99",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h{quantile="0.999",} 2515968.0
+vm_memory_pools_CodeHeap__non_nmethods__used_window_1h_count 35.0
+# HELP vm_memory_heap_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.heap.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_usage_x100_history summary
+vm_memory_heap_usage_x100_history{quantile="0.5",} 12.0
+vm_memory_heap_usage_x100_history{quantile="0.75",} 12.0
+vm_memory_heap_usage_x100_history{quantile="0.95",} 12.0
+vm_memory_heap_usage_x100_history{quantile="0.98",} 16.0
+vm_memory_heap_usage_x100_history{quantile="0.99",} 20.0
+vm_memory_heap_usage_x100_history{quantile="0.999",} 22.0
+vm_memory_heap_usage_x100_history_count 35.0
+# HELP vm_memory_heap_used_window_1h Generated from Dropwizard metric import (metric=vm.memory.heap.used.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_heap_used_window_1h summary
+vm_memory_heap_used_window_1h{quantile="0.5",} 2.35383296E8
+vm_memory_heap_used_window_1h{quantile="0.75",} 3.16967936E8
+vm_memory_heap_used_window_1h{quantile="0.95",} 4.310938623999999E8
+vm_memory_heap_used_window_1h{quantile="0.98",} 4.43001344E8
+vm_memory_heap_used_window_1h{quantile="0.99",} 4.43001344E8
+vm_memory_heap_used_window_1h{quantile="0.999",} 4.43001344E8
+vm_memory_heap_used_window_1h_count 35.0
+# HELP http_responseCodes_notModified_total Generated from Dropwizard metric import (metric=http.responseCodes.notModified, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_notModified_total counter
+http_responseCodes_notModified_total 9.0
+# HELP vm_memory_pools_Metaspace_usage_x100_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.Metaspace.usage.x100.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_Metaspace_usage_x100_window_1h summary
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.5",} 97.0
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.75",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.95",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.98",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.99",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_1h{quantile="0.999",} 98.0
+vm_memory_pools_Metaspace_usage_x100_window_1h_count 35.0
+# HELP http_responseCodes_notFound_total Generated from Dropwizard metric import (metric=http.responseCodes.notFound, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_notFound_total counter
+http_responseCodes_notFound_total 0.0
+# HELP vm_memory_pools_G1_Old_Gen_usage_x100_history Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.usage.x100.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Old_Gen_usage_x100_history summary
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.5",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.75",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.95",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.98",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.99",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history{quantile="0.999",} 7.0
+vm_memory_pools_G1_Old_Gen_usage_x100_history_count 35.0
+# HELP vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m Generated from Dropwizard metric import (metric=vm.memory.pools.CodeHeap-'non-nmethods'.committed.window.15m, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m summary
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.5",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.75",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.95",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.98",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.99",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m{quantile="0.999",} 2686976.0
+vm_memory_pools_CodeHeap__non_nmethods__committed_window_15m_count 35.0
+# HELP vm_memory_pools_G1_Old_Gen_init Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Old-Gen.init, type=com.codahale.metrics.jvm.MemoryUsageGaugeSet$$Lambda$544/0x00000001009fa0b0)
+# TYPE vm_memory_pools_G1_Old_Gen_init gauge
+vm_memory_pools_G1_Old_Gen_init 1.01711872E8
+# HELP jenkins_project_count_value Generated from Dropwizard metric import (metric=jenkins.project.count.value, type=jenkins.metrics.impl.JenkinsMetricProviderImpl$17)
+# TYPE jenkins_project_count_value gauge
+jenkins_project_count_value 6.0
+# HELP jenkins_job_scheduled_total Generated from Dropwizard metric import (metric=jenkins.job.scheduled, type=com.codahale.metrics.Meter)
+# TYPE jenkins_job_scheduled_total counter
+jenkins_job_scheduled_total 2.0
+# HELP vm_class_unloaded Generated from Dropwizard metric import (metric=vm.class.unloaded, type=com.codahale.metrics.jvm.ClassLoadingGaugeSet$$Lambda$557/0x0000000100a4f5e8)
+# TYPE vm_class_unloaded gauge
+vm_class_unloaded 13.0
+# HELP vm_file_descriptor_ratio Generated from Dropwizard metric import (metric=vm.file.descriptor.ratio, type=com.codahale.metrics.jvm.FileDescriptorRatioGauge)
+# TYPE vm_file_descriptor_ratio gauge
+vm_file_descriptor_ratio 3.96728515625E-4
+# HELP jenkins_executor_in_use_history Generated from Dropwizard metric import (metric=jenkins.executor.in-use.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_executor_in_use_history summary
+jenkins_executor_in_use_history{quantile="0.5",} 0.0
+jenkins_executor_in_use_history{quantile="0.75",} 0.0
+jenkins_executor_in_use_history{quantile="0.95",} 0.0
+jenkins_executor_in_use_history{quantile="0.98",} 1.0
+jenkins_executor_in_use_history{quantile="0.99",} 1.0
+jenkins_executor_in_use_history{quantile="0.999",} 1.0
+jenkins_executor_in_use_history_count 35.0
+# HELP jenkins_executor_free_history Generated from Dropwizard metric import (metric=jenkins.executor.free.history, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE jenkins_executor_free_history summary
+jenkins_executor_free_history{quantile="0.5",} 4.0
+jenkins_executor_free_history{quantile="0.75",} 4.0
+jenkins_executor_free_history{quantile="0.95",} 4.0
+jenkins_executor_free_history{quantile="0.98",} 4.0
+jenkins_executor_free_history{quantile="0.99",} 4.0
+jenkins_executor_free_history{quantile="0.999",} 4.0
+jenkins_executor_free_history_count 35.0
+# HELP vm_memory_pools_G1_Eden_Space_committed_window_1h Generated from Dropwizard metric import (metric=vm.memory.pools.G1-Eden-Space.committed.window.1h, type=jenkins.metrics.util.AutoSamplingHistogram)
+# TYPE vm_memory_pools_G1_Eden_Space_committed_window_1h summary
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.5",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.75",} 3.03038464E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.95",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.98",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.99",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h{quantile="0.999",} 3.38690048E8
+vm_memory_pools_G1_Eden_Space_committed_window_1h_count 35.0
+# HELP http_responseCodes_forbidden_total Generated from Dropwizard metric import (metric=http.responseCodes.forbidden, type=com.codahale.metrics.Meter)
+# TYPE http_responseCodes_forbidden_total counter
+http_responseCodes_forbidden_total 0.0
+# HELP default_jenkins_builds_duration_milliseconds_summary_created Summary of Jenkins build times in milliseconds by Job
+# TYPE default_jenkins_builds_duration_milliseconds_summary_created gauge
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="sans agent",repo="NA",buildable="true",} 1.747735099575E9
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="test2",repo="NA",buildable="true",} 1.747735099576E9
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",} 1.74773509958E9
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="Test",repo="NA",buildable="true",} 1.747735099575E9
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1.747735099583E9
+default_jenkins_builds_duration_milliseconds_summary_created{jenkins_job="testK3S",repo="NA",buildable="true",} 1.747735099577E9
+# HELP default_jenkins_builds_last_stage_duration_milliseconds_summary_created Summary of Jenkins build times by Job and Stage in the last build
+# TYPE default_jenkins_builds_last_stage_duration_milliseconds_summary_created gauge
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Deploy on K3s",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 1.747735099583E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Build Image",} 1.747735099582E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Surveillance USB en direct",} 1.747735099583E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Checkout",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Surveillance USB en direct",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Checkout",} 1.747735099582E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="testK3S",repo="NA",buildable="true",stage="Push Docker Image vers DockerHub",} 1.747735099577E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="testK3S",repo="NA",buildable="true",stage="Checkout Code depuis GitHub",} 1.747735099577E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="testK3S",repo="NA",buildable="true",stage="Build Docker Image sur VM4",} 1.747735099577E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Declarative: Checkout SCM",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Logs Check",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Deploy on K3s",} 1.747735099582E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Push to DockerHub",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Init",} 1.747735099582E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="usb-check-job",repo="NA",buildable="true",stage="Build Image",} 1.74773509958E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Push to DockerHub",} 1.747735099582E9
+default_jenkins_builds_last_stage_duration_milliseconds_summary_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",stage="Logs Check",} 1.747735099582E9
+# HELP default_jenkins_builds_success_build_count_created Successful build count
+# TYPE default_jenkins_builds_success_build_count_created gauge
+default_jenkins_builds_success_build_count_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1.747734739577E9
+# HELP default_jenkins_builds_total_build_count_created Total build count
+# TYPE default_jenkins_builds_total_build_count_created gauge
+default_jenkins_builds_total_build_count_created{jenkins_job="USB_Check_KS",repo="NA",buildable="true",} 1.747734739577E9
+# HELP jvm_memory_pool_allocated_bytes_created Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.
+# TYPE jvm_memory_pool_allocated_bytes_created gauge
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'profiled nmethods'",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Old Gen",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Eden Space",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'non-profiled nmethods'",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Survivor Space",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="Compressed Class Space",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="Metaspace",} 1.747734566566E9
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'non-nmethods'",} 1.747734566566E9
+
