@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'vm4' }
+    agent { label 'vm5' }
 
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-creds'
